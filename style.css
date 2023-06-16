@@ -8,8 +8,8 @@
 
 body {
     min-height: 100vh;
-    /* background: linear-gradient(to bottom, #FFFFFF, #CFC7DE, #B0A4C9, #4B2E83); */
-    background-size: 100% 125%;
+    background: linear-gradient(#FFFFFF, #CFC7DE, #B0A4C9, #4B2E83);
+    /* background-size: 100% 150%; */
     background-repeat: no-repeat;
     background-position: top;
     overflow-x: hidden;
@@ -38,15 +38,19 @@ header {
 }
 
 .btn-login {
-    margin-left: 30px;
-    margin-right: 10px;
+    margin-left: 35px;
+    margin-right: 25px;
     position: relative; /* Add position: relative */
     z-index: 2; /* Increase the z-index to make sure the login button stays on top */
 }
 
 .nav-items a {
-    margin-right: 30px;
+    margin-right: 75px;
     color: #4B2E83;
+}
+
+.nav-items a:hover {
+    transform: scale(1.1);
 }
 
 .logo-image-nav img {
@@ -57,22 +61,22 @@ header {
 }
 
 /* END OF NAV BARS CSS */
-
 .logo-image-landing img {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 600px;
+    max-height: 600px;
     margin-right: 10px;
     padding: 10px;
     position: absolute; /* Add position: absolute */
-    top: 198%; /* Position it vertically in the middle */
-    right: 4%; /* Position it on the right side */
+    top: 228%; /* Position it vertically in the middle */
+    right: 11%; /* Position it on the right side */
     transform: translateY(-50%); /* Adjust vertical positioning */
+
 }
 
 .intro-text-main {
     position: absolute;
-    top: 190%;
-    left: 4%;
+    top: 225%;
+    left: 10%;
     transform: translateY(-50%);
 }
   
@@ -80,12 +84,14 @@ header {
     color: #4B2E83;
     font-size: 45px;
     font-weight: bold;
+    animation: floatIn 1s ease-out;
+
 }
 
 .intro-text-sub-school {
     position: absolute;
-    top: 280%;
-    left: 4%;
+    top: 290%;
+    left: 10%;
     transform: translateY(-50%);
 }
 
@@ -94,3 +100,101 @@ header {
     font-size: 21px;
     font-weight: bold;
 }
+
+.btn-signup{
+    position: absolute;
+    top: 320%;
+    left: 9.8%;
+    transform: translateY(-50%);
+}
+
+.btn-about-us{
+    position: absolute;
+    top: 320%;
+    left: 23%;
+    transform: translateY(-50%);
+}
+
+/* code for the features box */
+.features-box {
+    margin: 530px auto;
+    max-width: 1100px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 22px;
+    animation: floatIn 1s ease-out;
+  }
+  
+  .features-box h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4B2E83;
+  }
+  
+  .features-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .left-column,
+  .middle-column,
+  .right-column {
+    flex-basis: 33.33%;
+  }
+  
+  .left-column ul,
+  .middle-column ul {
+    list-style-type: none;
+    margin-left: 20px;
+    padding-left: 0;
+  }
+  
+  .left-column li,
+  .middle-column li {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .bullet {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #4B2E83;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .bullet-title {
+    font-weight: bold;
+    color: #4B2E83;
+    margin-right: 5px;
+  }
+  
+  .right-column img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    background-color: #4B2E83;
+    position: center;
+  }
+  
+  .right-column img:hover{
+    transform: scale(1.05);
+  }
+
+.btn:hover 
+{
+    transform: scale(1.05);
+}
+
+/* float animation */
+@keyframes floatIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
