@@ -1,0 +1,96 @@
+/* Whole page CSS styling */
+* {
+    font-family: 'Cabin', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    /* background: linear-gradient(to bottom, #FFFFFF, #CFC7DE, #B0A4C9, #4B2E83); */
+    background-size: 100% 125%;
+    background-repeat: no-repeat;
+    background-position: top;
+    overflow-x: hidden;
+}
+
+header {
+    position: relative;
+    z-index: 1;
+}
+
+/* Nav bar CSS styling */
+.nav-bar {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    position: relative; /* Add position: relative */
+    z-index: 2; /* Increase the z-index to make sure the nav bar stays on top */
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    position: relative; /* Add position: relative */
+    z-index: 2; /* Increase the z-index to make sure the nav items stay on top */
+}
+
+.btn-login {
+    margin-left: 30px;
+    margin-right: 10px;
+    position: relative; /* Add position: relative */
+    z-index: 2; /* Increase the z-index to make sure the login button stays on top */
+}
+
+.nav-items a {
+    margin-right: 30px;
+    color: #4B2E83;
+}
+
+.logo-image-nav img {
+    max-width: 225px;
+    max-height: 125px;
+    margin-right: 10px;
+    padding: 2px;
+}
+
+/* END OF NAV BARS CSS */
+
+.logo-image-landing img {
+    max-width: 400px;
+    max-height: 400px;
+    margin-right: 10px;
+    padding: 10px;
+    position: absolute; /* Add position: absolute */
+    top: 198%; /* Position it vertically in the middle */
+    right: 4%; /* Position it on the right side */
+    transform: translateY(-50%); /* Adjust vertical positioning */
+}
+
+.intro-text-main {
+    position: absolute;
+    top: 190%;
+    left: 4%;
+    transform: translateY(-50%);
+}
+  
+.intro-text-main h1 {
+    color: #4B2E83;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.intro-text-sub-school {
+    position: absolute;
+    top: 280%;
+    left: 4%;
+    transform: translateY(-50%);
+}
+
+.intro-text-sub-school h2{
+    color: #4B2E83;
+    font-size: 21px;
+    font-weight: bold;
+}
