@@ -6,6 +6,40 @@
     box-sizing: border-box;
 }
 
+/* These two are for the supported majors tab */
+.half-size {
+  height: 6vh;
+  width: auto;
+}
+
+.half-size-foster {
+  height: 5vh;
+  width: auto;
+}
+
+.half-size-AS {
+  height: 4vh;
+  width: auto;
+}
+
+.half-size-Allen {
+  height: 3.25vh;
+  width: auto;
+}
+
+/* Vector Mountain */
+.vector-mountain {
+  position: absolute;
+  width: 450px;
+  height: 90px;
+  top: 10vh;
+  left: 10vh;
+}
+
+.image-container {
+  padding: 10px; /* Adjust the value to increase or decrease the padding */
+}
+
 body {
     min-height: 100vh;
     height: 300vh;
@@ -69,15 +103,14 @@ header {
     padding: 10px;
     position: absolute; /* Add position: absolute */
     top: 228%; /* Position it vertically in the middle */
-    right: 11%; /* Position it on the right side */
+    right: 3vh; /* Position it on the right side */
     transform: translateY(-50%); /* Adjust vertical positioning */
-
 }
 
 .intro-text-main {
     position: absolute;
     top: 225%;
-    left: 10%;
+    left: 9.5vh;
     transform: translateY(-50%);
 }
   
@@ -92,7 +125,7 @@ header {
 .intro-text-sub-school {
     position: absolute;
     top: 290%;
-    left: 10%;
+    left: 9.5vh;
     transform: translateY(-50%);
 }
 
@@ -105,14 +138,14 @@ header {
 .btn-signup{
     position: absolute;
     top: 320%;
-    left: 9.8%;
+    left: 9.5vh;
     transform: translateY(-50%);
 }
 
 .btn-about-us{
     position: absolute;
     top: 320%;
-    left: 23%;
+    left: 17vh;
     transform: translateY(-50%);
 }
 
@@ -125,68 +158,67 @@ header {
     border-radius: 20px;
     padding: 22px;
     animation: floatIn 1s ease-out;
-  }
+}
   
-  .features-box h1 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #4B2E83;
-  }
+.features-box h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4B2E83;
+}
   
   .features-content {
     display: flex;
     align-items: center;
   }
   
-  .left-column,
-  .middle-column,
-  .right-column {
-    flex-basis: 33.33%;
-  }
+.left-column,
+.middle-column,
+.right-column {
+  flex-basis: 33.33%;
+}
   
-  .left-column ul,
-  .middle-column ul {
-    list-style-type: none;
-    margin-left: 20px;
-    padding-left: 0;
-  }
+.left-column ul,
+.middle-column ul {
+  list-style-type: none;
+  margin-left: 20px;
+  padding-left: 0;
+}
   
-  .left-column li,
-  .middle-column li {
-    position: relative;
-    margin-bottom: 10px;
-  }
-  
-  .bullet {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    background-color: #4B2E83;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  
-  .bullet-title {
-    font-weight: bold;
-    color: #4B2E83;
-    margin-right: 5px;
-  }
-  
-  .right-column img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 10px;
-    background-color: #4B2E83;
-    background-color: white;
-    position: center;
-  }
-  
-  .right-column img:hover{
-    transform: scale(1.05);
-  }
+.left-column li,
+.middle-column li {
+  position: relative;
+  margin-bottom: 10px;
+}
 
-.btn:hover 
-{
+.bullet {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #4B2E83;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.bullet-title {
+  font-weight: bold;
+  color: #4B2E83;
+  margin-right: 5px;
+}
+
+.right-column img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+  background-color: #4B2E83;
+  background-color: white;
+  position: center;
+}
+  
+.right-column img:hover{
+  transform: scale(1.05);
+}
+
+.btn:hover {
     transform: scale(1.05);
 }
 
@@ -198,22 +230,22 @@ header {
     border-radius: 20px;
     padding: 22px;
     animation: floatIn 1s ease-out;
-  }
+}
   
-  .supported-majors-box h1 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #4B2E83;
-  }
+.supported-majors-box h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4B2E83;
+}
   
-  .majors-content {
-    display: flex;
-    align-items: center;
-  }
+.majors-content {
+  display: flex;
+  align-items: center;
+}
   
-  .right-column img:hover{
-    transform: scale(1.05);
-  }
+.right-column img:hover{
+  transform: scale(1.05);
+}
 
 /* code for the testimonials box */
 .testimonials-box {
