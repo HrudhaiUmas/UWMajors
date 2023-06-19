@@ -165,7 +165,7 @@ header {
 .features-box {
     margin: 50px auto;
     margin-top: 500px;
-    max-width: 1100px;
+    max-width: 1300px;
     background-color: #FFFFFF;
     border-radius: 20px;
     padding: 22px;
@@ -237,7 +237,7 @@ header {
 /* Styling for the supported majors section.  */
 .supported-majors-box{
     margin: 50px auto;
-    max-width: 1100px;
+    max-width: 1300px;
     background-color: #FFFFFF;
     border-radius: 20px;
     padding: 22px;
@@ -262,7 +262,7 @@ header {
 /* code for the testimonials box */
 .testimonials-box {
   margin: 50px auto;
-  max-width: 1100px;
+  max-width: 1300px;
   background-color: #FFFFFF;
   border-radius: 20px;
   padding: 22px;
@@ -289,7 +289,97 @@ header {
   border-radius: 15px;
   margin: 10px;
 }
+.testimonials-picture1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.testimonials-rectangle h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+}
+.testimonials-rectangle h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6F6F;
+}
+.testimonials-rectangle p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
+  color: #000000;
+}
 
+/* code for the about us box */
+.about-us-box {
+  margin: 50px auto;
+  max-width: 1300px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding: 22px;
+  animation: floatIn 1s ease-out;
+}
+
+.about-us-box h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4B2E83;
+}
+
+.about-us-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-us-rectangle{
+  width: 600px;
+  height: 390px;
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  border-radius: 15px;
+  position: relative;
+  top: 0px;
+  right: 130px;
+}
+.about-us-rectangle h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+}
+.about-us-rectangle h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6F6F;
+}
+.about-us-rectangle p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
+  color: #000000;
+}
 /* float animation */
 @keyframes floatIn {
     from {
