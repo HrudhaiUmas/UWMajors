@@ -34,6 +34,18 @@
   height: 90px;
   top: 10vh;
   left: 10vh;
+  animation: floatIn 1s ease-out;
+}
+
+.uw-majors-logo {
+  padding-bottom: 6vh;
+  padding-left: 3.5vh;
+}
+
+.testimonials-picture1 {
+  padding-top: 1vh;
+  align-items: center;
+  justify-content: center;
 }
 
 .image-container {
