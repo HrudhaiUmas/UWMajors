@@ -6,27 +6,6 @@
     box-sizing: border-box;
 }
 
-/* These two are for the supported majors tab */
-.half-size {
-  height: 6vh;
-  width: auto;
-}
-
-.half-size-foster {
-  height: 5vh;
-  width: auto;
-}
-
-.half-size-AS {
-  height: 4vh;
-  width: auto;
-}
-
-.half-size-Allen {
-  height: 3.25vh;
-  width: auto;
-}
-
 /* Vector Mountain */
 .vector-mountain {
   position: absolute;
@@ -49,14 +28,28 @@
 }
 
 .image-container {
-  padding: 10px; /* Adjust the value to increase or decrease the padding */
+  padding: 50px; /* Adjust the value to increase or decrease the padding */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.half-size,
+.half-size-foster,
+.half-size-AS {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.half-size-Allen{
+  max-width: 70%;
+  max-height: 100%;
 }
 
 body {
     min-height: 100vh;
     height: 300vh;
     background: linear-gradient(#FFFFFF, #CFC7DE, #B0A4C9, #4B2E83);
-    /* background-size: 100% 150%; */
     background-repeat: no-repeat;
     background-position: top;
     overflow-x: hidden;
@@ -157,7 +150,7 @@ header {
 .btn-about-us{
     position: absolute;
     top: 320%;
-    left: 17vh;
+    left: 25vh;
     transform: translateY(-50%);
 }
 
