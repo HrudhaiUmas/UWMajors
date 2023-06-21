@@ -11,7 +11,7 @@
   position: absolute;
   width: 450px;
   height: 90px;
-  top: 13vh;
+  top: 9vh;
   left: 10vh;
   animation: floatIn 1s ease-out;
 }
@@ -150,7 +150,7 @@ header {
 .btn-about-us{
     position: absolute;
     top: 320%;
-    left: 25vh;
+    left: 17vh;
     transform: translateY(-50%);
 }
 
