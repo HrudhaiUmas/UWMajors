@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="author" content="Hrudhai Umashankar, ____">
-        <meta name="description" content="UWMajors.com is a platform that provides users with access to a wide range of statistics on majors at the University of Washington Seattle. ">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <title>UW Majors</title>
-        <link rel="icon" href="img/graduation-hat.png">
-
-        <meta charset="utf-8">
-        <title>UW Majors</title>
-
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-
-        <!-- fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
-
-        <!-- bootstrap -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-
-        <!-- css -->
-        <link rel="stylesheet" href="style.css">
-    </head>
+  <head>
+    <meta name="author" content="Hrudhai Umashankar, ____">
+    <meta name="description" content="UWMajors.com is a platform that provides users with access to a wide range of statistics on majors at the University of Washington Seattle. ">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>UW Majors</title>
+    <link rel="icon" href="img/graduation-hat.png">
+    <meta charset="utf-8">
+    <title>UW Majors</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add these scripts before the closing </body> tag -->
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
 
     <body>
         <header>
@@ -44,7 +42,7 @@
                         style="background-color: #4B2E83; border-radius: 17px; font-size: 17px; font-family: 'Cabin', sans-serif; padding-left: 15px; padding-right: 15px;">Login</a>
                 </div>
             </nav>
-
+            
             <div class="header-landing">
                 <div class="logo-image-landing">
                   <img src="img/LightbulbSpaceImage.png" alt="Lightbulb with an individual riding it off into outer space">
@@ -175,23 +173,119 @@
 
           </section>
 
-          <section class="ABOUT-US">
-
-            <div class="about-us-box">
-              <h1>ABOUT US</h1>
-              <div class="about-us-content">
-                  <img class="about-us-picture1" src="img/simon-square-photo.png" alt="Sample Student Photo">
-                  <div class="about-us-rectangle">
-                 
-                 </div>
+          <section class="about-us">
+            <div class="container">
+              <div class="about-us-box">
+                <h1>ABOUT US</h1>
+                <div class="about-us-content">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="about-us-image">
+                        <img class="about-us-picture1" src="img/hrudhai-umas-photo.png" alt="Hrudhai Umas Photo">
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div id="team-carousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#team-carousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#team-carousel" data-slide-to="1"></li>
+                          <li data-target="#team-carousel" data-slide-to="2"></li>
+                          <li data-target="#team-carousel" data-slide-to="3"></li>
+                          <!-- Add more indicators for each team member -->
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <h2>Hrudhai Umas</h2>
+                            <p class="role">Founder | X</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut mollis tortor. Phasellus scelerisque lectus ut mauris fermentum, a semper neque semper.</p>
+                          </div>
+                          <div class="carousel-item">
+                            <h2>Simon Kurgan</h2>
+                            <p class="role">Founder | X</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut mollis tortor. Phasellus scelerisque lectus ut mauris fermentum, a semper neque semper.</p>
+                          </div>
+                          <div class="carousel-item">
+                            <h2>Henry Ramstad</h2>
+                            <p class="role">Founder | X</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut mollis tortor. Phasellus scelerisque lectus ut mauris fermentum, a semper neque semper.</p>
+                          </div>
+                          <div class="carousel-item">
+                            <h2>Roshan Mettupalli</h2>
+                            <p class="role">Founder | X</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut mollis tortor. Phasellus scelerisque lectus ut mauris fermentum, a semper neque semper.</p>
+                          </div>
+                          <!-- Add more carousel items for each team member -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="about-us-buttons">
+                  <a class="carousel-control-prev" href="#team-carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#team-carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
               </div>
             </div>
-
           </section>
+          
+          
 
+          <section class="know-where-you-stand">
+            <div class="container">
+              <h1>Know where you stand</h1>
+              <p class="small-text">Compare yourself to students majoring in the programs you want to be a part of</p>
+              <div class="btn-signup-end">
+                <a href="#" class="btn btn-primary btn-sm active" role="button" aria-pressed="true"
+                   style="background-color: #efefef; color: #4B2E83; border-color: #4B2E83; border-radius: 17px; font-size: 17px; font-family: 'Cabin', sans-serif;">Sign up!</a>
+              </div>
+            </div>
+          </section>
+          
         </main>
 
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     </body>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h1>UW Majors</h1>
+            <p>Your go-to resource for information about majors at the University of Washington Seattle.</p>
+          </div>
+          <div class="col-md-3">
+            <h1>Resources</h1>
+            <ul class="footer-links">
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Status</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h1>Contact</h1>
+            <ul class="footer-links">
+              <li><a href="#">Discord</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="mailto:UWmajors@gmail.com">UWmajors@gmail.com</a></li>
+              <li><a href="mailto:UWmajorsSupport@gmail.com">UWmajorsSupport@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
 
 </html>
 
