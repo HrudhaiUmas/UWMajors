@@ -1,291 +1,676 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="author" content="Hrudhai Umashankar, ____">
-    <meta name="description" content="UWMajors.com is a platform that provides users with access to a wide range of statistics on majors at the University of Washington Seattle. ">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>UW Majors</title>
-    <link rel="icon" href="img/graduation-hat.png">
-    <meta charset="utf-8">
-    <title>UW Majors</title>
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Add these scripts before the closing </body> tag -->
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <!-- css -->
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<head>
+  <meta name="author" content="Hrudhai Umashankar, Roshan Mettupalli">
+  <meta name="description"
+    content="UWMajors.com is a platform that provides users with access to a wide range of statistics on majors at the University of Washington Seattle. ">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+
+  <title>UW Majors</title>
+  <link rel="icon" href="img/graduation-hat.png">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+  <!-- icons -->
+  <script src="https://kit.fontawesome.com/a78abe8202.js" crossorigin="anonymous"></script>
+
 </head>
 
-    <body>
-        <header>
-            <nav class="nav-bar">
-                <div class="logo-image-nav">
-                    <a href="index.html">
-                      <img src="img/UWMajorsLogo.png" alt="UW Majors logo picture">
-                    </a>
-                  </div>
-                  
+<body>
 
-                <div class="nav-items">
-                    <a href="#">Features</a>
-                    <a href="#">Majors</a>
-                    <a href="#">About</a>
-                </div>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand"><img src="img/UWMajorsLogo.png" alt="UWMajorsLogo"></a>
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav">
+          <a href="#" class="nav-item nav-link navactive">Home</a>
+          <a href="#" class="nav-item nav-link">Profile</a>
+          <a href="#" class="nav-item nav-link">Messages</a>
+          <a href="#" class="nav-item nav-link">Reports</a>
+        </div>
+        <div class="navbar-nav ms-auto">
+          <a href="#" class="nav-item nav-link">Login</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-                <div class="btn-login">
-                    <a href="#" class="btn btn-primary btn-sm active" role="button" aria-pressed="true"
-                        style="background-color: #4B2E83; border-radius: 17px; font-size: 17px; font-family: 'Cabin', sans-serif; padding-left: 15px; padding-right: 15px;">Login</a>
-                </div>
-            </nav>
-            
-            <div class="header-landing">
-                <div class="logo-image-landing">
-                  <img src="img/LightbulbSpaceImage.png" alt="Lightbulb with an individual riding it off into outer space">
 
-                </div>
 
-                <div class="intro-text-main">
-                  <h1>Demystifying Capacity 
-                        <br>
-                        Constrained Majors
-                    </h1>
-                </div>
 
-                <div class="intro-text-sub-school">
-                    <h2>At the University of Washington</h2>
-                </div>
 
-                <div class="btn-signup">
-                    <a href="#" class="btn btn-primary btn-sm active" role="button" aria-pressed="true"
-                        style="background-color: #efefef; color: #4B2E83; border-color: #4B2E83; border-radius: 17px; font-size: 17px; font-family: 'Cabin', sans-serif; padding-left: 15px; padding-right: 15px;">Sign up!</a>
-                </div>
 
-                <div class="btn-about-us">
-                    <a href="#" class="btn btn-primary btn-sm active" role="button" aria-pressed="true"
-                        style="background-color: transparent; border-color: #85754D; color: #85754D; border-radius: 17px; font-size: 17px; font-family: 'Cabin', sans-serif; padding-left: 15px; padding-right: 15px;">About Us</a>
-                </div>
-                <img src="img/Vector 4.png" alt="Mountain Line Drawing. " class="vector-mountain">
+
+
+
+
+  <!-- Header/Banner -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 header-component header-component-title">
+        <h1>Demystifying Capacity Constrained Majors </h1>
+        <h4>at the University of Washington</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid facere, fuga asperiores cum aliquam
+          eligendi rerum rem. Provident tenetur saepe odio unde blanditiis, corporis voluptate illo eius, placeat vero
+          in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt quod, consectetur amet nam, architecto,
+          sed blanditiis aperiam quo provident optio fugit omnis cum quis ad nostrum facilis ullam maiores fugiat.</p>
+        <br>
+        <div class="text-left">
+          <button class="btn btn-primary">Sign Up</button>
+          <button class="btn btn-secondary">About Us</button>
+        </div>
+      </div>
+      <div class="col-lg-6 header-component header-component-image">
+        <img src="img/LightbulbSpaceImage.png" alt="Image">
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- Features Cards -->
+  <div class="top-features-cards">
+    <div class="tfc-column">
+      <div class="tfc-card">
+        <div class="tfc-card-title">
+          <h3>Feature 1</h3>
+          <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tellus augue, eleifend sed congue non,
+          pulvinar et mi. Suspendisse non consectetur nunc. Pellentesque lacinia, nibh vel semper finibus, turpis ante.
+        </p>
+      </div>
+    </div>
+
+    <div class="tfc-column">
+      <div class="tfc-card">
+        <div class="tfc-card-title">
+          <h3>Feature 2</h3>
+          <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tellus augue, eleifend sed congue non,
+          pulvinar et mi. Suspendisse non consectetur nunc. Pellentesque lacinia, nibh vel semper finibus, turpis ante.
+        </p>
+      </div>
+    </div>
+
+    <div class="tfc-column">
+      <div class="tfc-card">
+        <div class="tfc-card-title">
+          <h3>Feature 3</h3>
+          <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tellus augue, eleifend sed congue non,
+          pulvinar et mi. Suspendisse non consectetur nunc. Pellentesque lacinia, nibh vel semper finibus, turpis ante.
+        </p>
+      </div>
+    </div>
+
+    <div class="tfc-column">
+      <div class="tfc-card">
+        <div class="tfc-card-title">
+          <h3>Feature 4</h3>
+          <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tellus augue, eleifend sed congue non,
+          pulvinar et mi. Suspendisse non consectetur nunc. Pellentesque lacinia, nibh vel semper finibus, turpis ante.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Statistics Card -->
+
+  <br><br>
+  <div class="container pt-5 pb-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <p class="mb-0 text-muted">Sales</p>
+                <h2>$23,523</h2>
+              </div>
+              <span class="badge badge-pill badge-cyan font-size-12">
+                <i class="fas fa-arrow-up"></i>
+                <span class="font-weight-semibold ml-1">6.71%</span>
+              </span>
             </div>
-        </header>
-        
-        <main>
-          <section class="FEATURES">
-            <div class="features-box">
-              <h1>FEATURES</h1>
-              <div class="features-content">
-                <div class="left-column">
-                  <ul>
-                    <li>
-                      <span class="bullet"></span>
-                      <span class="bullet-title">Accurate Data</span>
-                      <span> <br>We aim to make our service accessible and intuitive, and use data collected exclusively from departmental offices at the UW and student submissions.</span>
-                    </li>
-                    <li>
-                      <span class="bullet"></span>
-                      <span class="bullet-title">Intuitive Dashboard</span>
-                      <span> <br>Our service combines crowd-sourced data from UW Students and admissions offices to contextualize the competitive major system and its challenges. </span>
-                    </li>
-                  </ul>
+            <div class="m-t-40">
+              <div class="d-flex justify-content-between">
+                <div class="d-flex align-items-center">
+                  <span class="badge badge-primary badge-dot mr-2"></span>
+                  <span class="text-gray font-weight-semibold font-size-13">Monthly Goal</span>
                 </div>
-                <div class="middle-column">
-                  <ul>
-                    <li>
-                      <span class="bullet"></span>
-                      <span class="bullet-title">Accurate Data</span>
-                      <span> <br>We aim to make our service accessible and intuitive, and use data collected exclusively from departmental offices at the UW and student submissions.</span>
-                    </li>
-                    <li>
-                      <span class="bullet"></span>
-                      <span class="bullet-title">Intuitive Dashboard</span>
-                      <span> <br>We aim to make our service accessible and intuitive, and use data collected exclusively from departmental offices at the UW and student submissions.</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="right-column">
-                  <img class="uw_" src="img/UWMajorsLogo.png" alt="UW Majors official logo.">
-                </div>
+                <span class="text-dark font-weight-semibold font-size-13 mt-2">70% </span>
+              </div>
+              <div class="progress progress-sm w-100 m-b-0 mt-2">
+                <div class="progress-bar bg-primary" style="width: 70%"></div>
               </div>
             </div>
-          </section>
-
-          <section class="SUPPORTED-MAJORS">
-
-            <div class="supported-majors-box">
-              <h1>SUPPORTED MAJORS</h1>
-              <div class="majors-content">
-                <div class="image-container">
-                    <img src="img/FOSTER.png" alt="UW Foster School of Business Logo." class="half-size-foster">
-                </div>
-                <div class="image-container">
-                  <img src="img/PH.png" alt="UW Public Health School Logo." class="half-size">
-                </div>
-                <div class="image-container">
-                  <img src="img/NURSE.png" alt="UW Nursing College Logo." class="half-size">
-                </div>
-                <div class="image-container">
-                  <img src="img/COE.png" alt="UW College Of Engineering." class="half-size">
-                </div>
-              </div>
-              <div class="majors-content">
-                <div class="image-container">
-                  <img src="img/AS.png" alt="UW Arts and Sciences Logo." class="half-size-AS">
-                </div>
-                <div class="image-container">
-                  <img src="img/INFO.png" alt="UW Information School Logo." class="half-size">
-                </div>
-                <div class="image-container">
-                  <img src="img/allen-school-logo.png" alt="UW Paul Allen School" class="half-size-Allen">
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section class="TESTIMONIALS">
-
-            <div class="testimonials-box">
-              <h1>TESTIMONIALS</h1>
-              <div class="testimonials-content">
-                <div class="testimonials-rectangle">
-                  <img class="testimonials-picture1" src="img/DSCF3048 1.png" alt="Sample Student Photo">
-                  <h2>Simon Kurgan</h2>
-                  <h3>(INFORMATICS 25’)</h3>
-                  <p>“This website cured my stupidity and inadvertently turned me into a googapleametafaang engineer. I found the data visualization easy to use and straightforward”</p>
-                </div>
-                <div class="testimonials-rectangle">
-                  <img class="testimonials-picture1" src="img/DSCF3048 1.png" alt="Sample Student Photo">
-                  <h2>Simon Kurgan</h2>
-                  <h3>(INFORMATICS 25’)</h3>
-                  <p>“This website cured my stupidity and inadvertently turned me into a googapleametafaang engineer. I found the data visualization easy to use and straightforward”</p>
-                </div>
-                <div class="testimonials-rectangle">
-                  <img class="testimonials-picture1" src="img/DSCF3048 1.png" alt="Sample Student Photo">
-                  <h2>Simon Kurgan</h2>
-                  <h3>(INFORMATICS 25’)</h3>
-                  <p>“This website cured my stupidity and inadvertently turned me into a googapleametafaang engineer. I found the data visualization easy to use and straightforward”</p>
-                </div>
-              </div>
-            </div>
-
-          </section>
-
-          <section class="about-us">
-            <div class="container">
-              <div class="about-us-box">
-                <h1>ABOUT US</h1>
-                <div class="about-us-content">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <div class="about-us-image">
-                        <img class="about-us-picture1" src="img/hrudhai-umas-photo.png" alt="Hrudhai Umas Photo">
-                      </div>
-                    </div>
-                    <div class="col-md-8">
-                      <div id="team-carousel" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                          <li data-target="#team-carousel" data-slide-to="0" class="active"></li>
-                          <li data-target="#team-carousel" data-slide-to="1"></li>
-                          <li data-target="#team-carousel" data-slide-to="2"></li>
-                          <li data-target="#team-carousel" data-slide-to="3"></li>
-                          <!-- Add more indicators for each team member -->
-                        </ol>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <h2>Hrudhai Umas</h2>
-                            <p class="role">Founder | X</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut mollis tortor. Phasellus scelerisque lectus ut mauris fermentum, a semper neque semper.</p>
-                          </div>
-                          <div class="carousel-item">
-                            <h2>Simon Kurgan</h2>
-                            <p class="role">Founder | X</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut mollis tortor. Phasellus scelerisque lectus ut mauris fermentum, a semper neque semper.</p>
-                          </div>
-                          <div class="carousel-item">
-                            <h2>Henry Ramstad</h2>
-                            <p class="role">Founder | X</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut mollis tortor. Phasellus scelerisque lectus ut mauris fermentum, a semper neque semper.</p>
-                          </div>
-                          <div class="carousel-item">
-                            <h2>Roshan Mettupalli</h2>
-                            <p class="role">Founder | X</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut mollis tortor. Phasellus scelerisque lectus ut mauris fermentum, a semper neque semper.</p>
-                          </div>
-                          <!-- Add more carousel items for each team member -->
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="about-us-buttons">
-                  <a class="carousel-control-prev" href="#team-carousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#team-carousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section>
-          
-          
-
-          <section class="know-where-you-stand">
-            <div class="container">
-              <h1>Know where you stand</h1>
-              <p class="small-text">Compare yourself to students majoring in the programs you want to be a part of</p>
-              <div class="btn-signup-end">
-                <a href="#" class="btn btn-primary btn-sm active" role="button" aria-pressed="true"
-                   style="background-color: #efefef; color: #4B2E83; border-color: #4B2E83; border-radius: 17px; font-size: 17px; font-family: 'Cabin', sans-serif;">Sign up!</a>
-              </div>
-            </div>
-          </section>
-          
-        </main>
-
-
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    </body>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h1>UW Majors</h1>
-            <p>Your go-to resource for information about majors at the University of Washington Seattle.</p>
-          </div>
-          <div class="col-md-3">
-            <h1>Resources</h1>
-            <ul class="footer-links">
-              <li><a href="#">Documentation</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Status</a></li>
-              <li><a href="#">Terms of Service</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h1>Contact</h1>
-            <ul class="footer-links">
-              <li><a href="#">Discord</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="mailto:UWmajors@gmail.com">UWmajors@gmail.com</a></li>
-              <li><a href="mailto:UWmajorsSupport@gmail.com">UWmajorsSupport@gmail.com</a></li>
-            </ul>
           </div>
         </div>
       </div>
-    </footer>
-    
-  
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <p class="mb-0 text-muted">Margin</p>
+                <h2>$8,523</h2>
+              </div>
+              <span class="badge badge-pill badge-cyan badge-red">
+                <i class="fas fa-arrow-down"></i>
+                <span class="font-weight-semibold   ml-1">6.71%</span>
+              </span>
+            </div>
+            <div class="m-t-40">
+              <div class="d-flex justify-content-between">
+                <div class="d-flex align-items-center">
+                  <span class="badge badge-primary badge-dot mr-2"></span>
+                  <span class="text-gray font-weight-semibold font-size-13">Monthly Goal</span>
+                </div>
+                <span class="text-dark font-weight-semibold font-size-13 mt-2">60% </span>
+              </div>
+              <div class="progress progress-sm w-100 m-b-0 mt-2">
+                <div class="progress-bar bg-primary" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <p class="mb-0 text-muted">Sales</p>
+                <h2>$23,523</h2>
+              </div>
+              <span class="badge badge-pill badge-cyan font-size-12">
+                <i class="fas fa-arrow-up"></i>
+                <span class="font-weight-semibold ml-1">6.71%</span>
+              </span>
+            </div>
+            <div class="m-t-40">
+              <div class="d-flex justify-content-between">
+                <div class="d-flex align-items-center">
+                  <span class="badge badge-primary badge-dot mr-2"></span>
+                  <span class="text-gray font-weight-semibold font-size-13">Monthly Goal</span>
+                </div>
+                <span class="text-dark font-weight-semibold font-size-13 mt-2">70% </span>
+              </div>
+              <div class="progress progress-sm w-100 m-b-0 mt-2">
+                <div class="progress-bar bg-primary" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- testimonials -->
+  <div class="testimonial-slider">
+    <div id="carouselExampleControls" class="carousel carousel-dark" data-bs-ride="carousel">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="testimonial-title">
+              <i class="bi bi-quote display-2"></i>
+              <h2 class="fw-bold display-6">What our customers say</h2>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="col-md-8">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card">
+                  <div class="img-wrapper"><img src="img/simon-square-photo.png" class="d-block w-100" alt="..."> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title 1</h5>
+                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam aspernatur assumenda eaque eveniet reiciendis reprehenderit itaque a. Blanditiis, eius! Unde, veritatis quaerat minus in porro tempora odit suscipit soluta animi.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="img-wrapper"><img src="img/simon-square-photo.png" class="d-block w-100" alt="..."> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title 2</h5>
+                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta tempora unde reprehenderit debitis numquam, nobis harum maiores officia sequi, tempore tenetur modi earum accusantium minima eos dolore maxime perspiciatis facere.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="img-wrapper"><img src="img/simon-square-photo.png" class="d-block w-100" alt="..."> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title 3</h5>
+                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam assumenda nobis deleniti ullam voluptatum mollitia totam quasi ea praesentium fugit vel veniam doloribus architecto, quidem animi. Veniam dolores veritatis facere.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="img-wrapper"><img src="img/simon-square-photo.png" class="d-block w-100" alt="..."> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title 4</h5>
+                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum eius iure ratione in debitis suscipit amet consequuntur totam dicta vero magnam deleniti facere corrupti natus, beatae, libero, cupiditate a quae.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="img-wrapper"><img src="img/simon-square-photo.png" class="d-block w-100" alt="..."> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title 5</h5>
+                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi unde sunt. Iusto laborum et labore culpa quidem qui ipsa corrupti dicta animi sit, eligendi error mollitia nam. Iusto, pariatur.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="img-wrapper"><img src="img/simon-square-photo.png" class="d-block w-100" alt="..."> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title 6</h5>
+                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aperiam error sit maxime assumenda, quidem saepe sint totam numquam laudantium ipsa nostrum? Nihil officiis voluptatum vero id distinctio repellendus tenetur.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      var multipleCardCarousel = document.querySelector(
+        "#carouselExampleControls"
+      );
+      if (window.matchMedia("(min-width: 576px)").matches) {
+        var carousel = new bootstrap.Carousel(multipleCardCarousel, {
+          interval: false,
+          wrap: false
+        });
+        var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+        var cardWidth = $(".carousel-item").width();
+        var scrollPosition = 0;
+        $("#carouselExampleControls .carousel-control-next").on("click", function () {
+          if (scrollPosition < carouselWidth - cardWidth * 3) {
+            scrollPosition += cardWidth;
+            $("#carouselExampleControls .carousel-inner").animate(
+              { scrollLeft: scrollPosition },
+              600
+            );
+          }
+        });
+        $("#carouselExampleControls .carousel-control-prev").on("click", function () {
+          if (scrollPosition > 1) {
+            scrollPosition -= cardWidth;
+            $("#carouselExampleControls .carousel-inner").animate(
+              { scrollLeft: scrollPosition },
+              600
+            );
+          }
+        });
+      } else {
+        $(multipleCardCarousel).addClass("slide");
+      }
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- about -->
+  <div class="container py-5">
+    <div class="row mb-4">
+      <div class="col-lg-5">
+        <h2 class="display-4">Our team</h2>
+        <hr>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <!-- Team item-->
+      <div class="col-xl-3 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-5 px-4 about-team-card">
+          <img src="img/simon-square-photo.png" alt="" width="100" class="rounded-circle mb-3">
+          <h5 class="mb-0">Simon Kurgan</h5>
+          <span class="small text-uppercase text-muted">CEO - Founder</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, dolore reprehenderit? Corporis fuga
+            doloribus, aliquam ratione repudiandae similique veritatis? Ipsam voluptas recusandae mollitia? Itaque
+            labore adipisci deserunt repellat rerum ex?</p>
+          <li class="list-inline-item">
+            <a href="#" class="social-link"><i class="fa fa-linkedin"></i></a>
+          </li>
+        </div>
+      </div>
+      <!-- End-->
+
+      <!-- Team item-->
+      <div class="col-xl-3 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-5 px-4 about-team-card">
+          <img src="img/simon-square-photo.png" alt="" width="100" class="rounded-circle mb-3">
+          <h5 class="mb-0">Roshan Mettupalli</h5>
+          <span class="small text-uppercase text-muted">CEO - Founder</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, dolore reprehenderit? Corporis fuga
+            doloribus, aliquam ratione repudiandae similique veritatis? Ipsam voluptas recusandae mollitia? Itaque
+            labore adipisci deserunt repellat rerum ex?</p>
+          <li class="list-inline-item">
+            <a href="#" class="social-link"><i class="fa fa-linkedin"></i></a>
+          </li>
+        </div>
+      </div>
+      <!-- End-->
+
+      <!-- Team item-->
+      <div class="col-xl-3 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-5 px-4 about-team-card">
+          <img src="img/simon-square-photo.png" alt="" width="100" class="rounded-circle mb-3">
+          <h5 class="mb-0">Henry Ramstad</h5>
+          <span class="small text-uppercase text-muted">CEO - Founder</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, dolore reprehenderit? Corporis fuga
+            doloribus, aliquam ratione repudiandae similique veritatis? Ipsam voluptas recusandae mollitia? Itaque
+            labore adipisci deserunt repellat rerum ex?</p>
+          <li class="list-inline-item">
+            <a href="#" class="social-link"><i class="fa fa-linkedin"></i></a>
+          </li>
+        </div>
+      </div>
+      <!-- End-->
+
+      <!-- Team item-->
+      <div class="col-xl-3 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-5 px-4 about-team-card">
+          <img src="img/simon-square-photo.png" alt="" width="100" class="rounded-circle mb-3">
+          <h5 class="mb-0">Hrudhai Umashankar</h5>
+          <span class="small text-uppercase text-muted">CEO - Founder</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, dolore reprehenderit? Corporis fuga
+            doloribus, aliquam ratione repudiandae similique veritatis? Ipsam voluptas recusandae mollitia? Itaque
+            labore adipisci deserunt repellat rerum ex?</p>
+          <li class="list-inline-item">
+            <a href="#" class="social-link"><i class="fa fa-linkedin"></i></a>
+          </li>
+        </div>
+      </div>
+      <!-- End-->
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- FAQ -->
+  <div class="faq-heading">
+    <h2>Frequently Asked Questions</h2>
+    <hr>
+  </div>
+
+  <button class="faq-accordion">Is this service free?</button>
+  <div class="faq-panel">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea error sit ipsum, totam repudiandae veniam
+      sapiente. Voluptatum modi minima rem recusandae ullam soluta temporibus cupiditate, perferendis quo
+      necessitatibus assumenda molestias. Lorem ipsum dolor, sit amet consectetur adipisicing elit. A itaque, ducimus
+      unde odio consequuntur quibusdam? Atque minima ex distinctio natus doloribus aliquid rerum ipsa aut! Repudiandae
+      repellendus delectus enim suscipit!</p>
+  </div>
+  <button class="faq-accordion">What if I have so-and-so as a constraint?</button>
+  <div class="faq-panel">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea error sit ipsum, totam repudiandae veniam
+      sapiente. Voluptatum modi minima rem recusandae ullam soluta temporibus cupiditate, perferendis quo
+      necessitatibus assumenda molestias. Lorem ipsum dolor, sit amet consectetur adipisicing elit. A itaque, ducimus
+      unde odio consequuntur quibusdam? Atque minima ex distinctio natus doloribus aliquid rerum ipsa aut! Repudiandae
+      repellendus delectus enim suscipit!</p>
+  </div>
+  <button class="faq-accordion">When will I recieve results?</button>
+  <div class="faq-panel">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea error sit ipsum, totam repudiandae veniam
+      sapiente. Voluptatum modi minima rem recusandae ullam soluta temporibus cupiditate, perferendis quo
+      necessitatibus assumenda molestias. Lorem ipsum dolor, sit amet consectetur adipisicing elit. A itaque, ducimus
+      unde odio consequuntur quibusdam? Atque minima ex distinctio natus doloribus aliquid rerum ipsa aut! Repudiandae
+      repellendus delectus enim suscipit!</p>
+  </div>
+  <button class="faq-accordion">Can I use this while going to blah?</button>
+  <div class="faq-panel">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea error sit ipsum, totam repudiandae veniam
+      sapiente. Voluptatum modi minima rem recusandae ullam soluta temporibus cupiditate, perferendis quo
+      necessitatibus assumenda molestias. Lorem ipsum dolor, sit amet consectetur adipisicing elit. A itaque, ducimus
+      unde odio consequuntur quibusdam? Atque minima ex distinctio natus doloribus aliquid rerum ipsa aut! Repudiandae
+      repellendus delectus enim suscipit!</p>
+  </div>
+  <button class="faq-accordion">I can't come up with another question so here?</button>
+  <div class="faq-panel">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea error sit ipsum, totam repudiandae veniam
+      sapiente. Voluptatum modi minima rem recusandae ullam soluta temporibus cupiditate, perferendis quo
+      necessitatibus assumenda molestias. Lorem ipsum dolor, sit amet consectetur adipisicing elit. A itaque, ducimus
+      unde odio consequuntur quibusdam? Atque minima ex distinctio natus doloribus aliquid rerum ipsa aut! Repudiandae
+      repellendus delectus enim suscipit!</p>
+  </div>
+  </div>
+
+  <script>
+    var acc = document.getElementsByClassName("faq-accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+
+
+
+
+
+
+
+
+
+
+  <!-- Know Where You Stand Card -->
+  <div class="component">
+    <div class="container">
+      <div class="component-columns">
+        <div class="component-column">
+          <img src="img/img.png" class="component-image" alt="Image">
+        </div>
+        <div class="component-column">
+          <div class="component-content">
+            <h2 class="component-title">Know where you stand</h2>
+            <p class="component-text">Compare yourself to students majoring in the programs you want to be a part of so
+              you can compare yourself to students majoring in the programs you want to be a part of</p>
+            <button class="btn btn-primary component-button">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer Card -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h4>UW Majors</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A animi natus facere neque, ipsum in omnis
+            consequatur? Doloribus odio est animi saepe ducimus eligendi obcaecati laudantium error? Nam, veniam eum!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium vero dolore repellendus hic accusamus
+            deserunt aperiam quis, ea nesciunt, velit soluta numquam nostrum enim itaque cupiditate similique iste
+            deleniti totam!</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Resources</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Status</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Contact</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Discord</a></li>
+            <li><a href="#">Another</a></li>
+
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-12">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <p class="text-muted">&copy; 2023 UWMajors. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body>
 
 </html>
-
