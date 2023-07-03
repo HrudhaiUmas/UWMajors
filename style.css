@@ -523,6 +523,70 @@ body {
   transform: translateY(-50%);
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
 }
+
+
+
+
+/* Login PAGE */
+
+.login-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #845CD1 0%, #FFF 94.79%);
+}
+
+.background-page {
+  background: linear-gradient(180deg, rgba(75, 46, 131, 0.90) 0%, rgba(75, 46, 131, 0.50) 57.29%, rgba(133, 117, 77, 0.74) 100%);
+  box-shadow: 0px 4px 25px 4px #4B2E83;
+  border-radius: 45px;
+  padding: 250px;
+  padding-inline: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 700px;
+}
+
+.logo {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+.login-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #845CD1 0%, #FFF 94.79%);
+}
+
+
+.container{
+  background-color: white;
+  fill: none;
+  border-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 576px) {
   .carousel-item {
     margin-right: 0;
