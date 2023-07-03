@@ -46,6 +46,16 @@ body {
 
 
 /* Header */
+.vector-mountain {
+  width: 65%;
+  object-fit: cover;
+}
+
+.main-intro-text {
+  font-weight: 550;
+  color: #4B2E83;
+}
+
 .header-component {
   display: flex;
   flex-wrap: wrap;
@@ -86,7 +96,7 @@ body {
 .btn-primary:hover {
   background-color: rgba(196, 183, 224, 0.1);
   border-radius: 50px;
-  border: 1px solid #85754D;
+  box-shadow: 0px 0px 0px 2px #85754D;
   color: #000;
   padding: 5px 15px;
   transition: 250ms ease-in-out;
@@ -95,14 +105,14 @@ body {
 .btn-secondary {
   background-color: rgba(196, 183, 224, 0.1);
   border-radius: 50px;
-  border: 1px solid #85754D;
+  box-shadow: 0px 0px 0px 0.5px #85754D;
   color: #000;
 }
 
 .btn-secondary:hover {
   background-color: #4B2E83;
   border-radius: 50px;
-  border: none;
+  box-shadow: none;
   transition: 250ms ease-in-out;
 }
 
@@ -153,6 +163,10 @@ body {
   width: 100%;
 }
 
+.tfc-card-title i {
+  padding-left: 5%;
+}
+
 .tfc-card-title h3 {
   display: inline-block;
 }
@@ -197,6 +211,17 @@ body {
 .custom-accordion .card {
   border: none;
   margin-bottom: 10px;
+  padding: 10px;
+}
+
+.row {
+  --bs-gutter-x:1.5rem;
+  --bs-gutter-y:1.5rem;
+  display:flex;
+  flex-wrap:wrap;
+  margin-top:calc(-1 * var(--bs-gutter-y));
+  margin-right:calc(-.5 * var(--bs-gutter-x));
+  margin-left:calc(-.5 * var(--bs-gutter-x))
 }
 
 .custom-accordion .card-header {
@@ -209,7 +234,7 @@ body {
 }
 
 .custom-accordion .card-header::after {
-  font-family: 'Font Awesome 5 Free';
+  font-family: 'Cabin', sans-serif;
   content: "\f078";
   float: right;
   color: #000;
@@ -268,7 +293,7 @@ body {
 }
 
 .component-button {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 @media (max-width: 600px) {
@@ -400,8 +425,8 @@ body {
 }
 
 .badge-cyan {
-  color: #00c9a7;
-  background: rgba(0, 201, 167, 0.1);
+  color: white;
+  background: #4B2E83;
   border-color: transparent;
   font-weight: 500;
 }
@@ -498,7 +523,7 @@ body {
 
 /* testimonials */
 .testimonial-slider {
-  background-color: #5072a7;
+  background-color: #4B2E83;
   padding: 3em 2em;
 }
 .testimonial-title {
@@ -506,6 +531,10 @@ body {
 }
 .testimonial-title h2 {
   padding-left: 0.2em;
+}
+.testimonials-title-text {
+  font-weight: 450;
+  font-family: 'Cabin', sans-serif;
 }
 .card {
   margin: 0 0.5em;
@@ -518,7 +547,7 @@ body {
   background-color: #fff;
   width: 3em;
   height: 3em;
-  border-radius: 50%;
+  border-radius: 30px;
   top: 60%;
   transform: translateY(-50%);
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
@@ -567,12 +596,20 @@ body {
 
 
 .container{
-  background-color: white;
+  /* CHANGE BACK */
+  background-color: none;
   fill: none;
   border-color: white;
 }
 
-
+.container-bottom {
+  /* CHANGE BACK */
+  background-color: none;
+  fill: none;
+  border-color: white;
+  align-items: center;
+  text-align: center;
+}
 
 
 
