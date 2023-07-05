@@ -20,11 +20,11 @@ body {
 }
 
 .navbar-brand img {
-  height: 2em;
+  height: 3em;
 }
 
 .navbar-collapse {
-  padding-left: 2%;
+  padding-left: 0%;
 }
 
 .nav-item,
@@ -35,6 +35,15 @@ body {
 .navactive {
   color: #4B2E83;
 }
+
+.static-navbar {
+  background-color: transparent;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 5;
+}
+
 
 
 
@@ -597,18 +606,23 @@ body {
 
 .container{
   /* CHANGE BACK */
-  background-color: none;
+  background-color: transparent;
   fill: none;
   border-color: white;
 }
 
 .container-bottom {
   /* CHANGE BACK */
-  background-color: none;
+  background-color: transparent;
   fill: none;
   border-color: white;
   align-items: center;
   text-align: center;
+}
+
+.container-margin {
+  margin-top: 100px; /* Add a top margin to avoid content overlay */
+  margin-bottom: 100px;
 }
 
 
