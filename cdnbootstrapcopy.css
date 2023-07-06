@@ -3368,7 +3368,7 @@ textarea.form-control-lg{
     --bs-nav-link-disabled-color:var(--bs-navbar-disabled-color);
     display:flex;
     flex-direction:column;
-    padding-left:0;
+    padding-left: 11px;
     margin-bottom:0;
     list-style:none
 }
