@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="author" content="Hrudhai Umashankar, Roshan Mettupalli">
+  <meta name="description"
+    content="UWMajors.com is a platform that provides users with access to a wide range of statistics on majors at the University of Washington Seattle. ">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+
+  <title>UW Majors</title>
+  <link rel="icon" href="img/graduation-hat.png">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+
+
+  <!-- bootstrap -->
+  <link href="cdnbootstrapcopy.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+  <!-- icons -->
+  <script src="https://kit.fontawesome.com/a78abe8202.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="crowdsource-body">
+
+  <div class="static-navbar-transparent">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand"><img src="img/UWMajorsLogo.png" alt="UWMajorsLogo"></a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="crowdsource.html" class="nav-item nav-link navactive">Crowd Source</a>
+            <a href="#" class="nav-item nav-link">About/Contact Us</a>
+            <a href="#" class="nav-item nav-link">Demystify Here!</a>
+          </div>
+          <div class="navbar-nav ms-auto">
+            <a href="login.html"><button class="btn btn-primary">Login</button></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  
+  <!-- <div class="container container-margin">
+    <div class="row crowdsource-page-intro">
+        <img class="crowdsource-vector-mountain" src="img/Vector 4.png">
+        <h2 class="crowdsource-intro-text">Help Us Crowdsource!</h2>
+    </div>
+
+    <div class="row crowdsource-page-cta">
+      <p>Welcome to UW Major, a groundbreaking project that aims to demystify competitive majors at the University of Washington (UW). 
+        We understand that choosing a major can be an overwhelming and challenging process, especially when faced with the pressure of 
+        limited spots and intense competition. Our mission is to provide students with comprehensive and transparent information about 
+        the most sought-after majors at UW, ensuring they can make informed decisions about their academic journey.</p>
+    </div>
+  </div> -->
+
+  <div class="container container-margin">
+    <div class="row">
+      <div class="col-lg-6 header-component header-component-title">
+        <div class="row crowdsource-page-intro">
+          <img class="crowdsource-vector-mountain" src="img/Vector 4.png">
+          <h2 class="crowdsource-intro-text">Help Us Crowdsource!</h2>
+        </div>
+  
+        <div class="row crowdsource-page-cta">
+          <p>Welcome to UW Major, a groundbreaking project that aims to demystify competitive majors at the University of Washington (UW). 
+            We understand that choosing a major can be an overwhelming and challenging process, especially when faced with the pressure of 
+            limited spots and intense competition. Our mission is to provide students with comprehensive and transparent information about 
+            the most sought-after majors at UW, ensuring they can make informed decisions about their academic journey.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="col-lg-6 header-component header-component-title">
+        <div class="row crowdsource-page-intro">
+          <h2 class="crowdsource-intro-text">Form Goes Here</h2>
+        </div>
+      
+        <div class="row crowdsource-page-cta">
+          <div class="crowdsource-button">
+            <button type="button" class="crowdsource-button-label" data-toggle="dropdown" role="button" data-id="difficulty" title="preGPA">
+              <div class="filter-option">
+                <div class="filter-option-inner">
+                  <div class="filter-option-inner-inner">Difficulty</div>
+                </div>
+              </div>
+            </button>
+            <div class="dropdown-menu" role="combobox">
+              <div class="inner show" role="listbox" aria-expanded="false" tabindex="-1">
+                <ul class="dropdown-menu inner show"></ul>
+              </div>
+            </div>
+            <select id="difficulty" class="crowdsource-button-label" title="preGPA">
+              <option class="bs-title-option" value=""></option>
+              <option>4.0</option>
+              <option>3.9</option>
+              <option>3.8</option>
+              <option>3.7</option>
+              <option>...</option>
+            </select>
+          </div>
+      
+          <div class="crowdsource-button">
+            <button type="button" class="crowdsource-button-label" data-toggle="dropdown" role="button" data-id="another-button" title="Another Button">
+              <div class="filter-option">
+                <div class="filter-option-inner">
+                  <div class="filter-option-inner-inner">Another Button</div>
+                </div>
+              </div>
+            </button>
+            <div class="dropdown-menu" role="combobox">
+              <div class="inner show" role="listbox" aria-expanded="false" tabindex="-1">
+                <ul class="dropdown-menu inner show"></ul>
+              </div>
+            </div>
+            <select id="another-button" class="crowdsource-button-label" title="Another Button">
+              <option class="bs-title-option" value=""></option>
+              <option>Option 1</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+              <option>...</option>
+            </select>
+          </div>
+      
+          <!-- Add more buttons here -->
+      
+        </div>
+      </div>
+      
+
+
+    </div>
+  </div>
+
+    <!-- <div class="tfc-column2">
+        <div class="tfc-card">
+          <div class="tfc-card-title">
+            <h3>Why Crowdsource?</h3>
+            <i class="fa fa-lightbulb-o tfc-card-title-logo" aria-hidden="true"></i>
+          </div>
+          <p>We kindly request your participation in crowd-sourcing valuable insights for our platform. 
+            By sparing just a minute of your time, you can make a profound difference in helping 
+            fellow students navigate the competitive majors landscape. Your input will shape our 
+            platform into a comprehensive and reliable resource, fostering an informed and 
+            supportive academic community at UW.
+          </p>
+        </div>
+      </div> -->
+
+      <!-- <div class="tfc-column3">
+        <div class="tfc-card">
+          <div class="tfc-card-title">
+            <h3>Short Bullet 1</h3>
+            <i class="fa fa-lightbulb-o tfc-card-title-logo" aria-hidden="true"></i>
+          </div>
+          <p>We kindly request your participation in crowd-sourcing valuable insights for our platform. 
+            By sparing just a minute of your time, you can make a profound difference in helping 
+          </p>
+        </div>
+      </div>
+
+      <div class="tfc-column4">
+        <div class="tfc-card">
+          <div class="tfc-card-title">
+            <h3>Short Bullet 2</h3>
+            <i class="fa fa-lightbulb-o tfc-card-title-logo" aria-hidden="true"></i>
+          </div>
+          <p>We kindly request your participation in crowd-sourcing valuable insights for our platform. 
+            By sparing just a minute of your time, you can make a profound difference in helping 
+          </p>
+        </div>
+      </div> -->
+    
+  
+
+  <!-- <div class="crowdsource-form">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScfclTylS0WodltofpgjyX7nuRsupFub6Z38rQLRg1TmZHy6A/viewform?embedded=true" width="645" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </div> -->
+</body>
+
+</html>

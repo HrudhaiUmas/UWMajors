@@ -16,7 +16,6 @@ body {
   z-index: 2;
   padding-left: 1%;
   padding-right: 1%;
-  background-color: #fff;
 }
 
 .navbar-brand img {
@@ -45,7 +44,16 @@ body {
 }
 
 .static-navbar {
-  background-color: transparent;
+  background-color: white;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 5;
+  color: white;
+}
+
+.static-navbar-transparent {
+  background-color: white;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -595,6 +603,7 @@ body {
 .container-margin {
   margin-top: 100px; /* Add a top margin to avoid content overlay */
   margin-bottom: 100px;
+  max-width: 80%;
 }
 
 
@@ -603,25 +612,27 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
-  background: linear-gradient(135deg, #845CD1 0%, #FFF 94.79%);
+  /* backgrund: linear-gradient(300deg, #845CD1 0%, #FFF 94.79%); */
+  background: none;
 }
 
 .background-page {
   background: linear-gradient(180deg, rgba(75, 46, 131, 0.90) 0%, rgba(75, 46, 131, 0.50) 57.29%, rgba(133, 117, 77, 0.74) 100%);
   box-shadow: 0px 4px 25px 4px #4B2E83;
   border-radius: 45px;
-  padding: 250px;
-  padding-inline: 690px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 700px;
-  max-height: 700px;
+  max-width: 90%;
+  max-height: 90%;
 }
 
+.crowdsource-vector-mountain {
+  max-width: 500px;
+  object-fit: cover;
+}
 
 .back-home{
   position: absolute; /* Add position absolute to adjust the positioning */
@@ -636,8 +647,50 @@ body {
   top: 100px; /* Adjust the top value to move it higher */
   left: 228px; /* Adjust the left value to move it towards the left */
   z-index: 10;
-  color: white;
   font-weight: bold;
+}
+
+.crowdsource-intro-text {
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 550;
+  color: #4B2E83;
+  margin-top: 35px;
+}
+
+.crowdsource-container-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.crowdsource-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.crowdsource-button-label {
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.crowdsource-page-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.crowdsource-page-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 0px 0px;
+}
+
+.crowdsource-page-cta p {
+  text-align: center;
+  max-width: 700px;
 }
 
 .fa-arrow-left {
