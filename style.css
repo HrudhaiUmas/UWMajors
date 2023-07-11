@@ -139,17 +139,9 @@ body {
 }
 
 .btn-secondary {
-  background-color: rgba(196, 183, 224, 0.1);
+  background-color: rgb(255, 255, 255);
   border-radius: 50px;
-  box-shadow: 0px 0px 0px 0.5px #85754D;
   color: #000;
-}
-
-.btn-secondary-alternate {
-  background-color: rgba(83, 75, 100, 0.1);
-  border-radius: 50px;
-  box-shadow: 0px 0px 0px 0.5px #ffffff;
-  color: #fff;
 }
 
 .btn-secondary:hover {
@@ -157,6 +149,14 @@ body {
   border-radius: 50px;
   box-shadow: none;
   transition: 250ms ease-in-out;
+}
+
+.btn-secondary-alternate {
+  background-color: rgba(83, 75, 100, 0.1);
+  border-radius: 50px;
+  box-shadow: 4px 4px 0px 0px #fff;
+  color: #fff;
+  border: 2px solid #fff;
 }
 
 .btn-secondary-alternate:hover {
