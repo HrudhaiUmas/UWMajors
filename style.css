@@ -72,6 +72,7 @@ body {
 
 /* Header */
 .vector-mountain {
+  max-width: 500px;
   width: 70%;
   object-fit: cover;
 }
@@ -151,15 +152,6 @@ body {
     padding: 15px;
   }
 }
-
-
-
-
-
-
-
-
-
 
 /* Features Cards */
 .top-features-cards {
@@ -747,8 +739,8 @@ body {
 color: #6A1B9A;
 }
 
-h1 {
-  text-align: center
+h1#register {
+  text-align: center;
 }
 
 input {
@@ -760,8 +752,6 @@ input {
   border-radius: 10px;
   -webkit-appearance: none;
 }
-
-
 
 .tab input:focus{
 
