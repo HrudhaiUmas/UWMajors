@@ -148,7 +148,7 @@ html{
     overflow-x:hidden
 }
  h1{
-    font-size:36px
+    font-size:450%;
 }
 h2{
     font-size:30px
@@ -179,7 +179,7 @@ h6{
 }
  h1,h2,h3,h4,h5,h6{
     font-weight:400;
-    margin:10px 0
+    margin:14px 0
 }
 .w3-wide{
     letter-spacing:4px
@@ -187,7 +187,7 @@ h6{
  hr{
     border:0;
     border-top:1px solid #eee;
-    margin:20px 0
+    margin:20px 0;
 }
  .w3-image{
     max-width:100%;
