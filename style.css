@@ -88,6 +88,19 @@ body {
 .main-intro-text {
   font-weight: 600;
   color: #4B2E83;
+  background-image: linear-gradient(to right, #4b2e83, #85754D, #85754d96);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 300%;
+  background-position: -100%;
+  animation: animatedText 8s infinite alternate-reverse;
+}
+
+@keyframes animatedText{
+  to {
+      background-position: 100%;
+  }
 }
 
 .header-component {
@@ -113,11 +126,12 @@ body {
   flex-basis: 45%;
   text-align: center;
   padding-top: 2%;
+  justify-content: center;
 }
 
 .header-component-image img {
   max-width: 90%;
-  padding-left: 10%;
+  max-height: 70%;
   height: auto;
 }
 
