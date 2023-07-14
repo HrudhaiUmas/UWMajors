@@ -1,7 +1,9 @@
 <?php
 
+print_r($_POST);
+
 $majors = $_POST["majors"];
-$admitted1 = $_POST["Admitted1"];
+$admitted1 = $_POST["admitted1"];
 $dual = $_POST["dual"];
 $majors2 = $_POST["majors2"];
 $wsa = filter_input(INPUT_POST, "Wsa", FILTER_VALIDATE_FLOAT);
