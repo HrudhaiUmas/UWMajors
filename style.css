@@ -1,3 +1,5 @@
+/* Whole Page Style */
+
 * {
   font-family: 'Cabin', sans-serif;
   margin: 0;
@@ -12,6 +14,8 @@ body {
   overflow-x: hidden;
 }
 
+
+/* Nav Bar Style */
 .navbar {
   z-index: 2;
   padding-left: 1%;
@@ -35,6 +39,7 @@ body {
   color: #ffffff;
   text-decoration: none; /* Remove default underline */
   padding-top: 15px;
+  font-family: 'Inter', sans-serif;
 }
 
 .nav-item:hover,
@@ -68,10 +73,7 @@ body {
 }
 
 
-
-
-
-/* Header */
+/* Header Styling Home Page*/
 .header-spacing {
   padding-top: 100px;
 }
@@ -92,12 +94,6 @@ body {
   background-size: 300%;
   background-position: -100%;
   animation: animatedText 8s infinite alternate-reverse;
-}
-
-@keyframes animatedText{
-  to {
-      background-position: 100%;
-  }
 }
 
 .header-component {
@@ -179,6 +175,16 @@ body {
   color: #000;
 }
 
+.main-intro-subtext {
+  font-size: 20px;
+}
+
+@keyframes animatedText{
+  to {
+      background-position: 100%;
+  }
+}
+
 @media (max-width: 800px) {
 
   .header-component-title,
@@ -189,11 +195,9 @@ body {
   }
 }
 
-.main-intro-subtext {
-  font-size: 20px;
-}
 
-/* Features Cards */
+
+/* Features Cards on Home Page Style */
 .top-features-cards {
   margin: 50px 25px 75px;
   margin-top: 100px;
@@ -259,13 +263,7 @@ body {
 
 
 
-
-
-
-
-
-
-/* Accordion */
+/* Accordion IM NOT SURE WE STILL HAVE THIS BUT AFFECTING PAGE SOMEHOW */
 .custom-accordion {
   width: 75%;
   margin: 0 auto;
@@ -326,13 +324,7 @@ body {
 
 
 
-
-
-
-
-
-
-/* Know Where You Stand */
+/* Ready to Demystify Home Page Style*/
 .component {
   padding-bottom: 30px;
   color: #ffffff;
@@ -370,6 +362,28 @@ body {
   margin-top: 10px;
 }
 
+.container{
+  /* CHANGE BACK */
+  background-color: transparent;
+  fill: none;
+  border-color: white;
+}
+
+.container-bottom {
+  /* CHANGE BACK */
+  background-color: transparent;
+  fill: none;
+  border-color: white;
+  align-items: center;
+  text-align: center;
+}
+
+.container-margin {
+  margin-top: 100px; /* Add a top margin to avoid content overlay */
+  margin-bottom: 100px;
+  max-width: 80%;
+}
+
 @media (max-width: 600px) {
   .component-column {
     flex-basis: 100%;
@@ -377,108 +391,7 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-/* Footer */
-.footer {
-  margin-top: 15px;
-  color: #f4f4f4;
-  background-color: #4B2E83;
-  text-align: left;
-}
-
-.footer a {
-  text-decoration: none;
-}
-
-.footer h4, h5{
-  color: #85754D;
-  font-weight: bolder;
-}
-
-@media (max-width: 900px) {
-  .footer {
-    text-align: center;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-/* FAQ */
-.faq-heading {
-  width: 86%;
-  margin-left: 7%;
-}
-
-.faq-heading hr {
-  line-height: 4px;
-}
-
-.faq-accordion {
-  border-radius: 15px;
-  background-color: #D3CDE0;
-  cursor: pointer;
-  padding: 20px;
-  width: 86%;
-  margin-left: 7%;
-  margin-bottom: 10px;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-  border: none;
-}
-
-.active,
-.faq-accordion:hover {
-  border-radius: 30px;
-  transition: 0.3s ease-in-out;
-  background-color: #f7f7f7;
-}
-
-.faq-accordion:after {
-  content: '\002B';
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-.faq-active:after {
-  content: "\2212";
-}
-
-.faq-panel {
-  padding: 0 18px;
-  width: 84%;
-  margin-left: 8%;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-
-
-
-
-
-
-
-
-
-
-/* Statistics Card*/
+/* Statistics Card on Home Page Style*/
 .card {
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(196, 183, 224, 0.9);
@@ -560,10 +473,39 @@ body {
   font-weight: 500;
 }
 
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  height: 100%;
+  border:4px solid #4a2e83b9;
+}
 
 
 
 
+/* Footer Style*/
+.footer {
+  margin-top: 15px;
+  color: #f4f4f4;
+  background-color: #4B2E83;
+  text-align: left;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer h4, h5{
+  color: #85754D;
+  font-weight: bolder;
+}
+
+@media (max-width: 900px) {
+  .footer {
+    text-align: center;
+  }
+}
 
 
 
@@ -596,64 +538,16 @@ body {
 
 
 
+/* CROWDSOURCE PAGE STYLES BELOW */
 
 
 
-/* testimonials */
-.testimonial-slider {
-  background-color: #4B2E83;
-  padding: 3em 2em;
-}
-.testimonial-title {
-  color: #fff;
-}
-.testimonial-title h2 {
-  padding-left: 0.2em;
-}
-.testimonials-title-text {
-  font-weight: 450;
-  font-family: 'Cabin', sans-serif;
-}
-.card {
-  margin: 0 0.5em;
-  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-  border: none;
-  height: 100%;
-  border:4px solid #4a2e83b9;
-}
-.carousel-control-prev,
-.carousel-control-next {
-  background-color: #fff;
-  width: 3em;
-  height: 3em;
-  border-radius: 30px;
-  top: 60%;
-  transform: translateY(-50%);
-  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-}
 
 
-.container{
-  /* CHANGE BACK */
-  background-color: transparent;
-  fill: none;
-  border-color: white;
-}
 
-.container-bottom {
-  /* CHANGE BACK */
-  background-color: transparent;
-  fill: none;
-  border-color: white;
-  align-items: center;
-  text-align: center;
-}
 
-.container-margin {
-  margin-top: 100px; /* Add a top margin to avoid content overlay */
-  margin-bottom: 100px;
-  max-width: 80%;
-}
+
+
 
 
 /* CROWDFUND CSS */
@@ -845,6 +739,8 @@ body {
   z-index: 10;
   max-width: 250px;
 }
+
+
 
 /* Contact Form */
 #regForm {
