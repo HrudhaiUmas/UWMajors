@@ -17,7 +17,7 @@
 
 
   <!-- bootstrap -->
-  <link href="cdnbootstrapcopy.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -46,12 +46,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav">
-            <a href="index.html" class="nav-item nav-link navactive">Home</a>
-            <a href="#" class="nav-item nav-link">About</a>
-            <a href="crowdsource.html" class="nav-item nav-link">Crowd Source</a>
+            <a href="index.html" id="bootstrap-overrides" class="nav-item navbar-dark navactive navbar-spacing">Home</a>
+            <a href="#" class="nav-item navbar-dark navbar-spacing">About</a>
+            <a href="crowdsource.html" class="nav-item navbar-dark navbar-spacing">Crowd Source</a>
           </div>
           <div class="navbar-nav ms-auto">
-            <a href="login.html"><button class="btn btn-secondary-alternate">DASHBOARD</button></a>
+            <a href="#" class="nav-item navbar-dark navbar-spacing">Dashboard</a>
           </div>
         </div>
       </div>
@@ -69,7 +69,7 @@
         <h4>Demystifying Competitive Majors at the University of Washington</h4> 
         <p class="main-intro-subtext">Our platform is a groundbreaking project that provides transparent and comprehensive information on competitive majors at the University of Washington (UW), empowering students to make informed decisions amidst limited spots and intense competition.
         </p>
-        <div class="text-left">
+        <div class="text-middle">
           <button class="btn btn-primary">Demystify Here</button>
           <button class="btn btn-secondary">About Us</button>
         </div>
@@ -159,7 +159,7 @@
                 <span class="text-dark font-weight-semibold font-size-13 mt-2">100 </span>
               </div>
               <div class="progress progress-sm w-100 m-b-0 mt-2">
-                <div class="progress-bar bg-primary" style="width: 70%"></div>
+                <div class="progress-bar bg-primary-purple" style="width: 70%"></div>
               </div>
             </div>
           </div>
@@ -186,7 +186,7 @@
                 <span class="text-dark font-weight-semibold font-size-13 mt-2">60% </span>
               </div>
               <div class="progress progress-sm w-100 m-b-0 mt-2">
-                <div class="progress-bar bg-primary" style="width: 70%"></div>
+                <div class="progress-bar bg-primary-purple" style="width: 70%"></div>
               </div>
             </div>
           </div>
@@ -213,7 +213,7 @@
                 <span class="text-dark font-weight-semibold font-size-13 mt-2">60% </span>
               </div>
               <div class="progress progress-sm w-100 m-b-0 mt-2">
-                <div class="progress-bar bg-primary" style="width: 70%"></div>
+                <div class="progress-bar bg-primary-purple" style="width: 70%"></div>
               </div>
             </div>
           </div>
@@ -265,7 +265,7 @@
 
   <!-- Footer Card -->
   <footer class="footer">
-    <div class="container">
+    <div class="container footer-padding">
       <div class="row">
         <div class="col-lg-6">
           <h4>UW Majors</h4>
