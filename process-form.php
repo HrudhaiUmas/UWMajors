@@ -18,10 +18,10 @@
     $message = isset($_POST["message"]) ? $_POST["message"] : "";
 
 
-    $host = "127.0.0.1";
-    $dbusername = "root";
-    $dbpassword = "";
-    $dbname = "crowdsource";
+    $host = '127.0.0.1';
+    $dbusername = 'root';
+    $dbpassword = '';
+    $dbname = 'uwmajors';
 
    // Create connection 
     $conn = new mysqli($host, $dbusername, $dbpassword, $dbname);
