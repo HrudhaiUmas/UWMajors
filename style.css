@@ -73,7 +73,6 @@ body {
   z-index: 5;
 }
 
-
 /* Header Styling Home Page*/
 .header-spacing {
   padding-top: 100px;
@@ -81,7 +80,7 @@ body {
 
 .vector-mountain {
   max-width: 370px;
-  width: 70%;
+  width: 65%;
   object-fit: cover;
 }
 
@@ -482,7 +481,7 @@ body {
 
 /* Footer Style*/
 .footer {
-  margin-top: 30px;
+  margin-top: 40px;
   color: #f4f4f4;
   background-color: #4B2E83;
   text-align: left;
@@ -757,6 +756,7 @@ input {
   border: 1px solid #aaaaaa;
   border-radius: 10px;
   -webkit-appearance: none;
+  appearance: none;
 }
 
 .tab input:focus{
