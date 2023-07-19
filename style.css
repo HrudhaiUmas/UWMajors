@@ -114,9 +114,16 @@ body {
   margin-top: 50px;
 }
 
+.header-component-title h1 {
+  font-family: 'Cabin', sans-serif;
+  font-size: 450%;
+}
+
 .header-component-title h4 {
+  font-family: 'Cabin', sans-serif;
+  font-size: 150%;
   color: #85754D;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .header-component-image {
@@ -384,7 +391,6 @@ body {
 .container-margin {
   margin-top: 100px; /* Add a top margin to avoid content overlay */
   margin-bottom: 100px;
-  max-width: 80%;
 }
 
 @media (max-width: 600px) {
@@ -740,7 +746,7 @@ body {
 #regForm {
   background-color: #ffffff;
   margin: 0px auto;
-  font-family: Raleway;
+  font-family: 'Cabin', sans-serif;
   padding: 40px;
   border-radius: 10px
 }
@@ -758,7 +764,7 @@ input {
   padding: 10px;
   width: 100%;
   font-size: 17px;
-  font-family: Raleway;
+  font-family: 'Cabin', sans-serif;
   border: 1px solid #aaaaaa;
   border-radius: 10px;
   -webkit-appearance: none;
