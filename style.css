@@ -27,10 +27,6 @@ body {
   color: black;
 }
 
-.nav-light {
-  color: white;
-}
-
 .nav-item,
 .nav-link {
   color: #ffffff;
@@ -39,18 +35,18 @@ body {
   font-family: 'Cabin', sans-serif;
 }
 
-.navbar-spacing {
-  margin-right: 1rem;
+.nav-item:hover,
+.nav-link:hover {
+  text-decoration: none;
 }
 
-.nav-link-override{
-  color: white;
+.navbar-spacing {
+  margin-right: 1rem;
 }
 
 .nav-item:hover,
 .nav-link:hover {
   color: #85754D; /* Change text color to purple on hover */
-  text-decoration: underline; /* Underline on hover */
 }
 
 .navactive {
@@ -114,9 +110,22 @@ body {
   margin-top: 50px;
 }
 
+/* Dynamically Resizing Heading*/
 .header-component-title h1 {
   font-family: 'Cabin', sans-serif;
-  font-size: 450%;
+  font-size: 400%;
+}
+
+@media (max-width: 425px) {
+  .header-component-title h1 {
+      font-size: 300%;
+  }
+}
+
+@media (max-width: 320px) {
+  .header-component-title h1 {
+      font-size: 250%;
+  }
 }
 
 .header-component-title h4 {
@@ -208,15 +217,6 @@ body {
 
 
 /* Features Cards on Home Page Style */
-.top-features-cards {
-  margin: 50px 25px 75px;
-  margin-top: 100px;
-}
-
-.top-features-cards:after {
-  display: flex;
-  justify-content: space-between;
-}
 
 .tfc-column {
   float: left;
@@ -482,7 +482,7 @@ body {
 
 /* Footer Style*/
 .footer {
-  margin-top: 15px;
+  margin-top: 30px;
   color: #f4f4f4;
   background-color: #4B2E83;
   text-align: left;
@@ -496,9 +496,10 @@ body {
   text-decoration: none;
 }
 
-.footer h4, h5{
+.footer h4, h5 {
   color: #85754D;
   font-weight: bolder;
+  font-family: 'Cabin', sans-serif;
 }
 
 @media (max-width: 900px) {
@@ -540,22 +541,10 @@ body {
 
 /* CROWDSOURCE PAGE STYLES BELOW */
 
-
-
-
-
-
-
-
-
-
-
-/* CROWDFUND CSS */
 .crowdsource-body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* backgrund: linear-gradient(300deg, #845CD1 0%, #FFF 94.79%); */
   background: none;
 }
 
