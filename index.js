@@ -1,31 +1,24 @@
-const express = require('express');
-const app = express();
-const PORT = 8080;
+var mysql = require('mysql');
+var fs = require('fs');
 
-app.use(express.json());
+var con = mysql.createConnection({
+  // change these values
+  host: "localhost",
+  user: "SIMON",
+  password: "SIMON",
+  database: "uwmajors"
+});
 
-app.get('/tshirt', (req, res) => {
-    res.status(200).send({
-        tshirt: 'babahab',
-        size: 'large'
+con.connect(function(err) {
+    if (err) throw err;
+    con.query('SELECT * FROM crowdsource_info', function(err, results, fields) {
+        if(err) throw err;
+        
+        fs.writeFile('table.json', JSON.stringify(results), function (err) {
+        if (err) throw err;
+        console.log('Saved!');
+        });
+
+        con.end();
     });
 });
-
-app.post('/tshirt/:id', (req, res) => {
-    const { id } = req.params;
-    const { logo } = req.body;
-
-    if (!logo) {
-        res.status(418).send({message: 'We need a logo!'})
-        return;
-    }
-
-    res.send({
-        tshirt: `bahabah with your ${logo} and ID of ${id}`,
-    })
-});
-
-app.listen(
-    PORT,
-    () => console.log(`it's alive on http://localhost:${PORT}`)
-)
