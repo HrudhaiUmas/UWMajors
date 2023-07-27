@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .bar {
+        fill: steelblue;
+      }
+    </style>
+</head>
+<body>
+    <div style="margin-top: 50px">
+        <svg id="barChart" width="800" height="300"></svg>
+    </div>
+
+    <script>
+        d3.json("majorData.json").then(function(data) {
+            var svg = d3.select("#barChart");
+            var margin = {top: 20, right: 20, bottom: 30, left: 40};
+            var width = +svg.attr("width") - margin.left - margin.right;
+            var height = +svg.attr("height") - margin.top - margin.bottom;
+            
+            var x = d3.scaleBand().rangeRound([0, width]).padding(0.1);
+            var y = d3.scaleLinear().rangeRound([height, 0]);
+
+            var g = svg.append("g")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+            
+            x.domain(data.map(function(d) { return d.majors; }));
+            y.domain([0, d3.max(data, function(d) { return d.frequency; })]);
+
+            g.append("g")
+                .attr("transform", "translate(0," + height + ")")
+                .call(d3.axisBottom(x))
+                .selectAll("text")
+                .style("text-anchor", "end")
+                .attr("dx", "-.8em")
+                .attr("dy", ".15em")
+                .attr("transform", "rotate(-65)");
+
+            g.append("g")
+                .call(d3.axisLeft(y))
+
+            g.selectAll(".bar")
+                .data(data)
+                .enter().append("rect")
+                .attr("class", "bar")
+                .attr("x", function(d) { return x(d.majors); })
+                .attr("y", function(d) { return y(d.frequency); })
+                .attr("width", x.bandwidth())
+                .attr("height", function(d) { return height - y(d.frequency); });
+
+            g.append("text")
+                .attr("x", (width / 2))             
+                .attr("y", 20 - (margin.top / 2))
+                .attr("text-anchor", "middle")  
+                .style("font-size", "16px") 
+                .text("Majors from JSON file");
+        });
+    </script>
+</body>
+</html>

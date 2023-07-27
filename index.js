@@ -1,8 +1,8 @@
+// Your existing Node.js code
 var mysql = require('mysql');
 var fs = require('fs');
 
 var con = mysql.createConnection({
-  // change these values
   host: "localhost",
   user: "SIMON",
   password: "SIMON",
@@ -10,15 +10,15 @@ var con = mysql.createConnection({
 });
 
 con.connect(function(err) {
-    if (err) throw err;
-    con.query('SELECT * FROM crowdsource_info', function(err, results, fields) {
-        if(err) throw err;
-        
-        fs.writeFile('table.json', JSON.stringify(results), function (err) {
-        if (err) throw err;
-        console.log('Saved!');
-        });
+  if (err) throw err;
+  con.query('SELECT majors, COUNT(*) AS frequency FROM crowdsource_info GROUP BY majors', function(err, results, fields) {
+    if(err) throw err;
 
-        con.end();
+    fs.writeFile('majorData.json', JSON.stringify(results), function (err) {
+      if (err) throw err;
+      console.log('Major data saved!');
     });
+
+    con.end();
+  });
 });
