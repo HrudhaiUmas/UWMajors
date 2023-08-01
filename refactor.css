@@ -19,9 +19,8 @@
     position: absolute;
     z-index: -1;
     top: -50%;
-    left: 50%;
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     filter: blur(500px);
     background: url(/img/noise.webp) repeat, linear-gradient(247.23deg,#4514c2 0%,#ebab20 100%);
     background-blend-mode: overlay;
