@@ -14,15 +14,60 @@
     z-index: 1;
   }
 
-  .heading1-text {
-    color: #FFF;
-    font-family: Barlow;
-    font-size: 67.5px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 81px; /* 120% */
+  .background-gradient-top {
+    z-index: -50;
+    position: absolute;
+    z-index: -1;
+    top: -50%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    filter: blur(500px);
+    background: url(/img/noise.webp) repeat, linear-gradient(247.23deg,#4514c2 0%,#ebab20 100%);
+    background-blend-mode: overlay;
+    -webkit-mask-image: radial-gradient(rgba(0,0,0,.8),transparent 70%);
+    mask-image: radial-gradient(rgba(0,0,0,.8),transparent 70%)
   }
 
+  .background-gradient-middle {
+    z-index: -50;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: -50%;
+    width: 80%;
+    height: 80%;
+    filter: blur(500px);
+    background: url(/img/noise.webp) repeat, linear-gradient(247.23deg,#8f899f 0%,#6813bd 100%);
+    background-blend-mode: overlay;
+    -webkit-mask-image: radial-gradient(rgba(0,0,0,.8),transparent 70%);
+    mask-image: radial-gradient(rgba(0,0,0,.8),transparent 70%)
+  }
+
+  .heading1-text {
+    color: #FFF;
+    font-family: 'Barlow';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .heading2-text {
+    color: #FFF;
+    font-family: 'Barlow';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .paragraph-text {
+    color: #FFF;
+    font-family: JetBrains Mono;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+  }
+  
   .btn-custom {
     background-color: white;
     color: black;
@@ -30,6 +75,9 @@
     border-radius: 0;
     border-width: 2px;
     border-color: white;
+    font-family: JetBrains Mono;
+    margin-right: 5px;
+    margin-left: 5px;
   }
 
   .btn-custom:hover {
@@ -46,23 +94,18 @@
     border-width: 2px;
     border-color: white;
     border-radius: 0;
+    font-family: JetBrains Mono;
+    margin-right: 5px;
+    margin-left: 5px;
   }
 
   .btn-custom2:hover {
     background-color: #ffffff; 
     color: #17181C;
+    border-width: 2px;
+    border-color: white;
     border-radius: 0;
   }
-
-  .paragraph-text {
-    color: #FFF;
-    font-family: JetBrains Mono;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px; /* 166.667% */
-  }
-
   
     /* Create the blurry gradient background */
     .blurry-gradient-background {
@@ -127,4 +170,85 @@
         border-width: 2px;
         margin: 0rem 1rem 0rem 1rem;
     }
+  }
+
+  .jetbrains {
+    font-family: JetBrains Mono;
+    color: white;
+  }
+
+  .big-arrow {
+    padding-top: 23px;
+    font-size: 30px;
+  }
+
+  .make-it-purple {
+    background: linear-gradient(to left, rgb(181, 110, 139), white);
+  }
+
+  .make-it-thinner {
+    height: 0.5rem;
+  }
+  
+  .card-style {
+    background: none;
+    color: white;
+    border-width: 2px;
+    border-color: white;
+  }
+
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+    padding: 30px 0;
+    background: none;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    /* background: linear-gradient(to left, rgba(255, 255, 255, 0), white); */
+  }
+  
+  .logos:after {
+    right: 0;
+    /* background: linear-gradient(to right, rgba(255, 255, 255, 0), white); */
+  }
+  
+  /* .logos:hover .logos-slide {
+    animation-play-state: paused;
+  } */
+  
+  .logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+  }
+  
+  .logos-slide img {
+    height: 50px;
+    margin: 0 40px;
+  }
+
+  .white-footer p, h1, h2, h3, h4, h5, h6 {
+    color: white;
+    font-family: JetBrains Mono;
   }
