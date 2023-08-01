@@ -178,8 +178,10 @@
   }
 
   .big-arrow {
-    padding-top: 23px;
     font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .make-it-purple {
@@ -249,6 +251,17 @@
   }
 
   .white-footer p, h1, h2, h3, h4, h5, h6 {
-    color: white;
     font-family: JetBrains Mono;
+    color: white;
+  }
+
+  .barlow {
+    font-family: 'Barlow';
+    color: white;
+    font-weight: 600;
+  }
+
+  .white-footer-li {
+    font-family: JetBrains Mono;
+    color: white;
   }
