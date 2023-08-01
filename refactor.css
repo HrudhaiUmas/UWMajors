@@ -1,0 +1,130 @@
+* {
+    /* font-family: 'JetBrains Mono'; */
+    font-family: 'Barlow';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #17181C;
+    background-repeat: no-repeat;
+    background-position: top;
+    overflow-x: hidden;
+    z-index: 1;
+  }
+
+  .heading1-text {
+    color: #FFF;
+    font-family: Barlow;
+    font-size: 67.5px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 81px; /* 120% */
+  }
+
+  .btn-custom {
+    background-color: white;
+    color: black;
+    border-width: 0px;
+    border-radius: 0;
+    border-width: 2px;
+    border-color: white;
+  }
+
+  .btn-custom:hover {
+    background-color: #17181C; 
+    color: white;
+    border-radius: 0;
+    border-width: 2px;
+    border-color: white;
+  }
+
+  .btn-custom2 {
+    background-color: #17181C;
+    color: #FFFFFF;
+    border-width: 2px;
+    border-color: white;
+    border-radius: 0;
+  }
+
+  .btn-custom2:hover {
+    background-color: #ffffff; 
+    color: #17181C;
+    border-radius: 0;
+  }
+
+  .paragraph-text {
+    color: #FFF;
+    font-family: JetBrains Mono;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+  }
+
+  
+    /* Create the blurry gradient background */
+    .blurry-gradient-background {
+        position: relative;
+        overflow: hidden;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('path/to/your-background-image.jpg');
+        /* The above line creates a gradient overlay with transparency and your background image */
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+      }
+      
+      /* Add the blurry effect to the background overlay */
+      .blurry-gradient-background::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.5); /* Adjust the transparency as needed */
+        z-index: -1;
+      }
+
+  .static-navbar {
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  .nav-header {
+    font-size: 18px;
+  }
+  
+  .navbar-nav img {
+    max-width: 25px;
+  }
+
+  .mountain-ascii {
+    max-height: 30px;
+  }
+
+  @media (min-width: 1200px) {
+    .sub-nav-header {
+        border-width: 2px;
+        margin: 0rem 2rem 0rem 2rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .sub-nav-header {
+        border-width: 2px;
+        margin: 0rem 2rem 0rem 2rem;
+    }
+  }
+
+  @media (min-width: 0px) {
+    .sub-nav-header {
+        border-width: 2px;
+        margin: 0rem 1rem 0rem 1rem;
+    }
+  }
