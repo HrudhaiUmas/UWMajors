@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <style>
       .bar {
-        fill: steelblue;
+        fill: rgb(24, 71, 94);
       }
     </style>
 </head>
@@ -18,47 +18,48 @@
 
     <script>
         d3.json("majorData.json").then(function(data) {
-            var svg = d3.select("#barChart");
-            var margin = {top: 20, right: 20, bottom: 30, left: 40};
-            var width = +svg.attr("width") - margin.left - margin.right;
-            var height = +svg.attr("height") - margin.top - margin.bottom;
-            
-            var x = d3.scaleBand().rangeRound([0, width]).padding(0.1);
-            var y = d3.scaleLinear().rangeRound([height, 0]);
+        var svg = d3.select("#barChart");
+        var margin = {top: 20, right: 20, bottom: 30, left: 40};
+        var width = +svg.attr("width") - margin.left - margin.right;
+        var height = +svg.attr("height") - margin.top - margin.bottom;
 
-            var g = svg.append("g")
-                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-            
-            x.domain(data.map(function(d) { return d.majors; }));
-            y.domain([0, d3.max(data, function(d) { return d.frequency; })]);
+        var x = d3.scaleBand().rangeRound([0, width]).padding(0.1);
+        var y = d3.scaleLinear().rangeRound([height, 0]);
 
-            g.append("g")
-                .attr("transform", "translate(0," + height + ")")
-                .call(d3.axisBottom(x))
-                .selectAll("text")
-                .style("text-anchor", "end")
-                .attr("dx", "-.8em")
-                .attr("dy", ".15em")
-                .attr("transform", "rotate(-65)");
+        var g = svg.append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-            g.append("g")
-                .call(d3.axisLeft(y))
+        x.domain(data.map(function(d) { return d.majors; }));
+        y.domain([0, d3.max(data, function(d) { return d.frequency; })]);
 
-            g.selectAll(".bar")
-                .data(data)
-                .enter().append("rect")
-                .attr("class", "bar")
-                .attr("x", function(d) { return x(d.majors); })
-                .attr("y", function(d) { return y(d.frequency); })
-                .attr("width", x.bandwidth())
-                .attr("height", function(d) { return height - y(d.frequency); });
+        g.append("g")
+            .attr("transform", "translate(0," + height + ")")
+            .call(d3.axisBottom(x))
+            .selectAll("text")
+            .style("text-anchor", "end")
+            .attr("dx", "-.8em")
+            .attr("dy", ".15em")
+            .attr("transform", "rotate(-65)");
 
-            g.append("text")
-                .attr("x", (width / 2))             
-                .attr("y", 20 - (margin.top / 2))
-                .attr("text-anchor", "middle")  
-                .style("font-size", "16px") 
-                .text("Majors from JSON file");
+        g.append("g")
+            .call(d3.axisLeft(y))
+
+        g.selectAll(".bar")
+            .data(data)
+            .enter().append("rect")
+            .attr("class", "bar")
+            .attr("x", function(d) { return x(d.majors); })
+            .attr("y", function(d) { return y(d.frequency); })
+            .attr("width", x.bandwidth())
+            .attr("height", function(d) { return height - y(d.frequency); })
+            .style("fill", "white"); // This line sets the color of the bars to white
+
+        g.append("text")
+            .attr("x", (width / 2))             
+            .attr("y", 20 - (margin.top / 2))
+            .attr("text-anchor", "middle")  
+            .style("font-size", "16px") 
+            .text("Majors from JSON file");
         });
     </script>
 </body>
