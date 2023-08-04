@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta charset="utf-8">
 
-  <title>UW Majors (NEW)</title>
-  <link rel="icon" href="img/Rectangle.png">
+  <title>UW Majors</title>
+  <link rel="icon" href="img/graduation-hat.png">
 
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
@@ -32,9 +32,9 @@
 <body>
     <div class="background-gradient-top"></div>
     <div class="container">
-        <nav class="navbar navbar-font navbar-expand-lg navbar-dark">
+          <nav class="navbar navbar-font navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img class="mountain-ascii" src="/img/mountain_ascii.png"/>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,20 +43,20 @@
                 <div class="collapse navbar-collapse justify-content-between" id="navbarScroll">
                     <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                         <li class="nav-item">
-                            <a class="nav-link nav-header" aria-current="page" href="#">Home</a>
+                            <a class="nav-link nav-header" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active nav-header" aria-current="page" href="#">Crowd Source</a>
+                            <a class="nav-link active nav-header" href="newcrowdsource.html">Crowdsource</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav-header" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-header" href="#">Dashboard</a>
+                            <a class="nav-link nav-header" href="dashboard.html">Dashboard</a>
                         </li>
                     </ul>
                     <div class="navbar-nav nav-header">
-                        <a href="#"><img src="socialIcons/Link → SVG.png"/></a>
+                      <a href="https://github.com/HrudhaiUmas/UWMajors" target="_blank"><img src="socialIcons/Link → SVG.png"/></a>
                     </div>
                 </div>
             </div>
@@ -66,7 +66,7 @@
 
     <div class="container pt-5">
         <div class="row-alternate">
-            <h2 class="heading2-text text-center">HELP US HELP YOU</h2>
+            <h2 class="heading2-text text-center">HELP US HELP YOU!</h2>
             <div style="width: 90%;" class="container">
                 <p class="paragraph-text text-center">
                     We aim to make our service accessible and intuitive, and use data collected exclusively from departmental offices at the UW and student submissions.
@@ -83,10 +83,13 @@
                     </div>
                     <div class="pl-4 container">
                         <ul class="white-footer">
-                            <li class="pt-2 white-footer-li">Lorem ipsum impogada le arbitara se vici </li>
-                            <li class="pt-2 white-footer-li">Lorem ipsum impogada le arbitara se vici </li>
-                            <li class="pt-2 white-footer-li">Lorem ipsum impogada le arbitara se vici </li>
-                            <li class="pt-2 white-footer-li">Lorem ipsum impogada le arbitara se vici </li>
+                            <li class="pt-2 white-footer-li">Provide Accurate Information: Ensure that the information you provide is accurate and reliable. Double-check facts before submitting them to avoid spreading misinformation.</li>
+                            <br>
+                            <li class="pt-2 white-footer-li">DO Report Issues: If you come across inappropriate content or encounter any technical issues, report them promptly to the platform administrators. </li>
+                            <br>
+                            <li class="pt-2 white-footer-li">DO Provide Feedback: Offer constructive feedback on the platform's features, usability, and improvements. This helps the organizers enhance the crowdsourcing experience. </li>
+                            <br>
+                            <li class="pt-2 white-footer-li">Help out your fellow Huskies!</li>
                         </ul>
                     </div>
 
@@ -95,10 +98,11 @@
                     </div>
                     <div class="pl-4 container">
                         <ul class="white-footer">
-                            <li class="pt-2 white-footer-li">Lorem ipsum impogada le arbitara se vici </li>
-                            <li class="pt-2 white-footer-li">Lorem ipsum impogada le arbitara se vici </li>
-                            <li class="pt-2 white-footer-li">Lorem ipsum impogada le arbitara se vici </li>
-                            <li class="pt-2 white-footer-li">Lorem ipsum impogada le arbitara se vici </li>
+                            <li class="pt-2 white-footer-li">DON'T Submit False Information: Avoid submitting misleading or false information, as it can negatively impact the project's credibility and integrity. </li>
+                            <br>
+                            <li class="pt-2 white-footer-li">DON'T Engage in Spamming: Refrain from spamming the platform with irrelevant or repetitive contributions. </li>
+                            <!-- <li class="pt-2 white-footer-li">Lorem ipsum impogada le arbitara se vici </li>
+                            <li class="pt-2 white-footer-li">Lorem ipsum impogada le arbitara se vici </li> -->
                         </ul>
                     </div>
 
@@ -112,14 +116,15 @@
     <div class="container">
         <!-- <img src="img/UWMajorsLogo.png"> -->
         <div class="formbold-main-wrapper">
-            <form action="process-form.php" method="POST">
+            <form action="process-form.php" method="POST" id="majorsForm" onsubmit="return validateForm()">
 
               <div class="formbold-input-group">
                 <label class="formbold-form-label">
-                  1) What major did you apply to?
+                  * What major did you apply to?
                 </label>
               
                 <select class="formbold-form-select" name="majors" id="majors">
+                  <option value="">--select your answer--</option>
                   <option value="Aeronautics & Astronautics">Aeronautics & Astronautics</option>
                   <option value="AMATH">AMATH</option>
                   <option value="Architecture">Architecture</option>
@@ -166,10 +171,11 @@
 
               <div class="formbold-input-group">
                 <label class="formbold-form-label">
-                  2) Have you been admitted to your major program? 
+                  * Have you been admitted to your major program? 
                 </label>
         
-                <select class="formbold-form-select" name="admitted1" id="admitted1">
+                <select class="formbold-form-select" name="admitted1">
+                  <option value="">--select your answer--</option>
                   <option value="Yes">Yes</option>
                   <option value="No">No</option>
                 </select>
@@ -177,19 +183,21 @@
 
               <div class="formbold-input-group">
                 <label class="formbold-form-label">
-                  3) Are you pursuing a double major or dual degree?
+                  * Are you pursuing a double major or dual degree?
                 </label>
                 <select class="formbold-form-select" name="dual" id="dual">
+                  <option value="">--select your answer--</option>
                   <option value="Yes">Yes</option>
                   <option value="No">No</option>
                 </select>
               </div>
-
-              <div class="formbold-input-group">
+              
+              <div id="dualMajorQuestion" class="formbold-input-group">
                 <label class="formbold-form-label">
-                  4) What was your dual major?
+                  * What was your dual major?
                 </label>
                 <select class="formbold-form-select" name="majors2" id="majors2">
+                  <option value="">--select your answer--</option>
                   <option value="Aeronautics & Astronautics">Aeronautics & Astronautics</option>
                   <option value="AMATH">AMATH</option>
                   <option value="Architecture">Architecture</option>
@@ -234,11 +242,12 @@
                 </select>
               </div>
 
-              <div class="formbold-input-group">
+              <div id="wsaQuestion" class="formbold-input-group" style="display: none;">
                 <label class="formbold-form-label">
-                  5) What is your WSA score?
+                  * What is your WSA score?
                 </label>
                 <select class="formbold-form-select" name="Wsa" id="Wsa">
+                  <option value="">--select your answer--</option>
                   <option value="2.0">2.0</option>
                   <option value="2.5">2.5</option>
                   <option value="3.0">3.0</option>
@@ -253,9 +262,10 @@
 
               <div class="formbold-input-group">
                 <label class="formbold-form-label">
-                  6) What is your class standing?
+                  * What is your class standing?
                 </label>
                 <select class="formbold-form-select" name="standing" id="standing">
+                  <option value="">--select your answer--</option>
                   <option value="Freshman">Freshman</option>
                   <option value="Sophmore">Sophmore</option>
                   <option value="Junior">Junior</option>
@@ -265,9 +275,10 @@
 
               <div class="formbold-input-group">
                 <label class="formbold-form-label">
-                  7) What is your residency status?
+                  * What is your residency status?
                 </label>
                 <select class="formbold-form-select" name="resident" id="resident">
+                  <option value="">--select your answer--</option>
                   <option value="In-State">In-State Resident</option>
                   <option value="Out-of-State">Out-of-State Resident</option>
                   <option value="International">International</option>
@@ -276,9 +287,10 @@
 
               <div class="formbold-input-group">
                 <label class="formbold-form-label">
-                  8) Are you a first-generation college student?
+                  * Are you a first-generation college student?
                 </label>
                 <select class="formbold-form-select" name="firstgen" id="firstgen">
+                  <option value="">--select your answer--</option>
                   <option value="Yes">Yes</option>
                   <option value="No">No</option>
                 </select>
@@ -286,9 +298,10 @@
 
               <div class="formbold-input-group">
                 <label class="formbold-form-label">
-                  9) Have you completed Running Start?
+                  * Have you completed Running Start?
                 </label>
                 <select class="formbold-form-select" name="running" id="running">
+                  <option value="">--select your answer--</option>
                   <option value="Yes">Yes</option>
                   <option value="No">No</option>
                 </select>
@@ -296,9 +309,10 @@
 
               <div class="formbold-input-group">
                 <label class="formbold-form-label">
-                  10) Are you a transfer student?
+                  * Are you a transfer student?
                 </label>
                 <select class="formbold-form-select" name="transfer" id="transfer">
+                  <option value="">--select your answer--</option>
                   <option value="Yes">Yes</option>
                   <option value="No">No</option>
                 </select>
@@ -306,9 +320,10 @@
 
               <div class="formbold-input-group">
                 <label class="formbold-form-label">
-                  11) How many transfer credits do you have? (if applicable)
+                  * How many transfer credits do you have? (if applicable)
                 </label>
                 <select class="formbold-form-select" name="transcredit" id="transcredit">
+                  <option value="">--select your answer--</option>
                   <option value="0-15">0-15</option>
                   <option value="16-30">16-30</option>
                   <option value="31-45">31-45</option>
@@ -319,9 +334,10 @@
 
               <div class="formbold-input-group">
                 <label class="formbold-form-label">
-                  12) Have you completed major related internship?
+                  * Have you completed major related internship?
                 </label>
                 <select class="formbold-form-select" name="internship" id="internship">
+                  <option value="">--select your answer--</option>
                   <option value="yes">Yes</option>
                   <option value="no">No</option>
                 </select>
@@ -329,9 +345,10 @@
 
               <div class="formbold-input-group">
                 <label class="formbold-form-label">
-                  13) Have you completed related research/work experience?
+                  * Have you completed related research/work experience?
                 </label>
                 <select class="formbold-form-select" name="work" id="work">
+                  <option value="">--select your answer--</option>
                   <option value="yes">Yes</option>
                   <option value="no">No</option>
                 </select>
@@ -339,9 +356,10 @@
 
               <div class="formbold-input-group">
                 <label class="formbold-form-label">
-                  14) What is your overall UW GPA?
+                  * What is your overall UW GPA?
                 </label>
                 <select class="formbold-form-select" name="gpa" id="gpa">
+                  <option value="">--select your answer--</option>
                   <option value="Below">Below 2.0</option>
                   <option value="2.1">2.1</option>
                   <option value="2.2">2.2</option>
@@ -368,9 +386,10 @@
 
               <div class="formbold-input-group">
                 <label class="formbold-form-label">
-                  15) How many courses have you taken inside the major pre-admittance?
+                  * How many courses have you taken inside the major pre-admittance?
                 </label>
                 <select class="formbold-form-select" name="coursestaken" id="coursestaken">
+                  <option value="">--select your answer--</option>
                   <option value="Below">0</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -385,9 +404,10 @@
 
               <div class="formbold-input-group">
                 <label class="formbold-form-label">
-                  16) Is this your first application to the program?
+                  * Is this your first application to the program?
                 </label>
                 <select class="formbold-form-select" name="firstapp" id="firstapp">
+                  <option value="">--select your answer--</option>
                   <option value="yes">Yes</option>
                   <option value="2nd">No, it is my 2nd</option>
                   <option value="3rd">No, it is my 3rd</option>
@@ -606,4 +626,64 @@
             </div>
         </footer>
     </div>
+
+    <script>
+      function validateForm() {
+        const selectElements = document.querySelectorAll('.formbold-form-select');
+    
+        let isValid = true;
+    
+        selectElements.forEach((selectElement) => {
+          if (selectElement.value === '') {
+            isValid = false;
+            selectElement.style.borderColor = 'red';
+          } else {
+            selectElement.style.borderColor = '#dde3ec';
+          }
+        });
+    
+        return isValid;
+      }
+    
+      // Function to show/hide the WSA question based on the selected majors
+      function updateQuestionVisibility() 
+      {
+        const majorsSelect = document.getElementById('majors');
+        const dualSelect = document.getElementById('dual');
+        const wsaQuestion = document.getElementById('wsaQuestion');
+        const dualMajorQuestion = document.getElementById('dualMajorQuestion');
+
+        // Check if either major is "Business" or pursuing a double major is "Business"
+        if (majorsSelect.value === 'Business' || (dualSelect.value === 'Yes' && document.getElementById('majors2').value === 'Business')) {
+          wsaQuestion.style.display = 'block';
+        } else {
+          wsaQuestion.style.display = 'none';
+          // If the WSA question is hidden, reset its value to empty
+          document.getElementById('Wsa').value = '';
+        }
+
+        // Check if the user answered "No" to the dual major question
+        if (dualSelect.value === 'No') {
+          // Hide the dual major question and reset its value to empty
+          dualMajorQuestion.style.display = 'none';
+          document.getElementById('majors2').value = '';
+        } else {
+          // Show the dual major question if the user selected "Yes" for the dual major
+          dualMajorQuestion.style.display = 'block';
+        }
+      }
+
+      // Add event listeners to majors, dual, and majors2 select elements
+      const majorsSelect = document.getElementById('majors');
+      const dualSelect = document.getElementById('dual');
+      const majors2Select = document.getElementById('majors2');
+
+      majorsSelect.addEventListener('change', updateQuestionVisibility);
+      dualSelect.addEventListener('change', updateQuestionVisibility);
+      majors2Select.addEventListener('change', updateQuestionVisibility);
+
+      // Initially call the function to set the visibility based on the initial values
+      updateQuestionVisibility();
+    </script>
+      
 </body>
