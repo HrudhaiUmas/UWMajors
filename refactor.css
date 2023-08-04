@@ -264,3 +264,69 @@
     font-family: JetBrains Mono;
     color: white;
   }
+
+
+  .typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+  }
+  
+  /* Keyframes for typing animation */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  /* Keyframes for blinking cursor animation */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #fff;
+    }
+  }
+  
+  /* Apply the animation to the span element inside .typewriter */
+  .typewriter span {
+    border-right: 0.15em solid #fff;
+    padding-right: 10px;
+    animation: typing 1.5s steps(30, end), blink-caret 0.5s step-end infinite;
+  }
+
+  /* Typewriter animation */
+.typewriter {
+  overflow: hidden; /* Hide the overflowing characters */
+  border-right: 0.2em solid #fff; /* Add a border on the right side to represent the cursor */
+  white-space: nowrap; /* Keep the text in one line */
+  margin: 0 auto; /* Center the text */
+  letter-spacing: 0.15em; /* Adjust spacing between characters */
+  animation: typing 3.5s steps(55, end), /* Typing animation */
+             blink-caret 0.5s step-end infinite; /* Blinking cursor animation */
+             
+}
+
+/* Keyframes for typing animation */
+@keyframes typing {
+  from { width: 0; } /* Start with no width (no characters) */
+  to { width: 38%; } /* End with full width (all characters visible) */
+}
+
+/* Keyframes for blinking cursor animation */
+@keyframes blink-caret {
+  from, to { border-color: transparent; } /* Start and end with transparent border color */
+  35% { border-color: #fff; } 
+}
+
+/* Apply the animation to the span element inside .typewriter */
+.typewriter span {
+  border-right: 0.15em solid #fff;
+  padding-right: 10px;
+  animation: typing 5s steps(55, end), blink-caret 0.5s step-end infinite;
+}
