@@ -303,12 +303,12 @@
   /* Typewriter animation */
 .typewriter {
   overflow: hidden; /* Hide the overflowing characters */
-  border-right: 0.2em solid #fff; /* Add a border on the right side to represent the cursor */
+  border-right: 0.1em solid #fff; /* Add a border on the right side to represent the cursor */
   white-space: nowrap; /* Keep the text in one line */
   margin: 0 auto; /* Center the text */
-  letter-spacing: 0.15em; /* Adjust spacing between characters */
-  animation: typing 3.5s steps(55, end), /* Typing animation */
-             blink-caret 0.5s step-end infinite; /* Blinking cursor animation */
+  letter-spacing: 0.05em; /* Adjust spacing between characters */
+  animation: typing 2s steps(55, end), /* Typing animation */
+             blink-caret 0.75s step-end infinite; /* Blinking cursor animation */
              
 }
 
