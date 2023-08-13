@@ -5,6 +5,26 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  html.lenis {
+    height: auto;
+  }
+  
+  .lenis.lenis-smooth {
+    scroll-behavior: auto;
+  }
+  
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+  
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
+  }
   
   body {
     background-color: #17181C;
@@ -353,7 +373,7 @@ a {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	padding: 10rem;
+	padding: 2.5rem 10rem 2.5rem 10rem;
 	width: 10%;
 	max-width: 100px;
 	background-color: #1b2028;
@@ -388,6 +408,10 @@ a {
 			#2c333e 100%
 		);
 	}
+}
+
+.profile-media-links {
+  margin: 0.5rem;
 }
 
 .profile-image {
