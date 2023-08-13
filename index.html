@@ -18,7 +18,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script> 
 
   <!-- css -->
   <link rel="stylesheet" href="refactor.css">
@@ -96,14 +95,18 @@
             <div class="col-md-4 pb-3">
                 <div class="card-style card">
                   <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div>
-                        <p class="jetbrains mb-0">Majors Supported</p>
-                        <h2 class="jetbrains">14</h2>
-                      </div>
-                      <div class="big-arrow">
-                        <i class="fas fa-arrow-up"></i>
-                        <span class="jetbrains font-weight-semibold ml-1">20%</span>
+                    <div>
+                      <div class="d-flex flex-column">
+                        <div>
+                          <p class="jetbrains mb-0">Majors Supported</p>
+                        </div>
+                        <div class="justify-content-between d-flex">
+                          <h2 class="jetbrains">14</h2>
+                          <div class="big-arrow">
+                            <i class="fas fa-arrow-up"></i>
+                            <span class="jetbrains font-weight-semibold ml-1">20%</span>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div class="m-t-40 pt-3">
@@ -123,26 +126,30 @@
           <div class="col-md-4 pb-3">
             <div class="card-style card">
               <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <div>
-                    <p class="jetbrains mb-0">Majors Supported</p>
-                    <h2 class="jetbrains">14</h2>
+                <div>
+                  <div class="d-flex flex-column">
+                    <div>
+                      <p class="jetbrains mb-0">Majors Supported</p>
+                    </div>
+                    <div class="justify-content-between d-flex">
+                      <h2 class="jetbrains">14</h2>
+                      <div class="big-arrow">
+                        <i class="fas fa-arrow-up"></i>
+                        <span class="jetbrains font-weight-semibold ml-1">20%</span>
+                      </div>
+                    </div>
                   </div>
-                  <span class="big-arrow">
-                    <i class="fas fa-arrow-up"></i>
-                    <span class="jetbrains font-weight-semibold ml-1">20%</span>
-                  </span>
                 </div>
                 <div class="m-t-40 pt-3">
-                  <div class="d-flex justify-content-between">
-                    <div class="d-flex align-items-center">
-                      <span class="jetbrains">Monthly Goal</span>
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex align-items-center">
+                        <span class="jetbrains">Monthly Goal</span>
+                        </div>
+                        <span class="jetbrains">60% </span>
                     </div>
-                    <span class="jetbrains">60% </span>
-                  </div>
-                  <div class="progress progress-sm w-100 m-b-0 mt-2 make-it-thinner">
-                    <div class="make-it-purple progress-bar make-it-thinner" style="width: 70%"></div>
-                  </div>
+                    <div class="progress progress-sm w-100 m-b-0 mt-2 make-it-thinner">
+                        <div class="make-it-purple progress-bar make-it-thinner" style="width: 70%"></div>
+                    </div>
                 </div>
               </div>
             </div>
@@ -150,15 +157,19 @@
           <div class="col-md-4 pb-3">
             <div class="card-style card">
               <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <div>
-                    <p class="jetbrains mb-0">Majors Supported</p>
-                    <h2 class="jetbrains">14</h2>
+                <div>
+                  <div class="d-flex flex-column">
+                    <div>
+                      <p class="jetbrains mb-0">Majors Supported</p>
+                    </div>
+                    <div class="justify-content-between d-flex">
+                      <h2 class="jetbrains">14</h2>
+                      <div class="big-arrow">
+                        <i class="fas fa-arrow-up"></i>
+                        <span class="jetbrains font-weight-semibold ml-1">20%</span>
+                      </div>
+                    </div>
                   </div>
-                  <span class="big-arrow">
-                    <i class="fas fa-arrow-up"></i>
-                    <span class="jetbrains font-weight-semibold ml-1">20%</span>
-                  </span>
                 </div>
                 <div class="m-t-40 pt-3">
                     <div class="d-flex justify-content-between">
@@ -240,18 +251,3 @@
         </footer>
     </div>
 </body>
-
-<script>
-  const lenis = new Lenis()
-
-  lenis.on('scroll', (e) => {
-    console.log(e)
-  })
-
-  function raf(time) {
-    lenis.raf(time)
-    requestAnimationFrame(raf)
-  }
-
-  requestAnimationFrame(raf)
-</script>
