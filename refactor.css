@@ -429,6 +429,13 @@ a {
 	}
 }
 
+.profile-image img {
+  margin: auto;
+  position: absolute;
+  left: 0%;
+  width: 200px;
+}
+
 .profile-username {
 	font-size: 1.5rem;
 	font-weight: 600;
@@ -549,7 +556,6 @@ sans-serif{
 
 .accordion-section .panel-title a {
   display: block;
-  font-style: italic;
   font-size: 1.5rem;
   color: #f1f3f3; /* Set the text color */
 }
