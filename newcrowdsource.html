@@ -30,6 +30,9 @@
 </head>
 
 <body>
+    <div class="progress-bar-container">
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
     <div class="background-gradient-top"></div>
     <div class="container">
       <nav class="navbar navbar-font navbar-expand-lg navbar-dark">
@@ -64,59 +67,7 @@
       <hr class="sub-nav-header">
   </div>
 
-    <div class="container">
-      <div class="container pt-5 pb-5">
-        <div class="row-alternate">
-          <!-- <h1 class="heading1-text text-center typewriter">UW MAJORS<span class="cursor"></span></h1> -->
-          <h1 style="font-size: 300%" class="heading1-text text-center">
-            CROWDSOURCE!
-          </h1>
-          
-          <div style="width: 90%;" class="container">
-                <p class="paragraph-text text-center">
-                    Our platform utilizes your survey responses to provide unique data, help us out if you can!
-                </p>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <div class="container">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div style="margin-left: 1rem;">
-              <h5 class="barlow">The Do's</h1>
-              <hr style="margin: 0rem; padding: 0rem; border-width: 2px; width: 15%;">
-            </div>
-            <div class="pl-4 container">
-                <ul class="white-footer">
-                    <li class="pt-2 white-footer-li">Provide Accurate Information: Ensure that the information you provide is accurate and reliable. Double-check facts before submitting them to avoid spreading misinformation.</li>
-                    <br>
-                    <li class="pt-2 white-footer-li">DO Report Issues: If you come across inappropriate content or encounter any technical issues, report them promptly to the platform administrators. </li>
-                    <br>
-                </ul>
-            </div>
-          </div>
-          <div class="col">
-            <div class="">
-              <h5 class="barlow">& Dont's</h1>
-              <hr style="margin: 0rem; padding: 0rem; border-width: 2px; width: 15%;">
-            </div>
-            <div class="pl-4 container">
-                <ul class="white-footer">
-                  <li class="pt-2 white-footer-li">Provide Accurate Information: Ensure that the information you provide is accurate and reliable. Double-check facts before submitting them to avoid spreading misinformation.</li>
-                  <br>
-                  <li class="pt-2 white-footer-li">DO Report Issues: If you come across inappropriate content or encounter any technical issues, report them promptly to the platform administrators. </li>
-                  <br>
-                </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
+    <div class="container pt-5">
         <!-- <img src="img/UWMajorsLogo.png"> -->
         <div class="formbold-main-wrapper">
             <form action="process-form.php" method="POST" id="majorsForm" onsubmit="return validateForm()">
@@ -439,6 +390,22 @@
 
 
         <style>
+            .progress-bar-container {
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 5px; /* Adjust the height as needed */
+              background-color: none; /* Background color of the progress bar container */
+            }
+
+            .progress-bar {
+              height: 100%;
+              width: 0;
+              background-color: #6813bd; /* Color of the progress bar */
+              transition: width 0.3s; /* Transition effect for smooth progress */
+            }
+
           * {
             margin: 0;
             padding: 0;
@@ -686,6 +653,24 @@
 
       // Initially call the function to set the visibility based on the initial values
       updateQuestionVisibility();
+
+      function updateProgress() {
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.body.clientHeight;
+      const scrollTop = window.scrollY;
+
+      const scrollPercentage = (scrollTop / (documentHeight - windowHeight)) * 100;
+
+      const progressBar = document.getElementById('progress-bar');
+      progressBar.style.width = scrollPercentage + '%';
+    }
+
+    // Attach the updateProgress function to the scroll event
+    window.addEventListener('scroll', updateProgress);
+
+    // Call the updateProgress function initially to set the progress bar's initial state
+    updateProgress();
     </script>
       
 </body>
+
